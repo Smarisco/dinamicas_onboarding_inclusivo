@@ -1,7 +1,7 @@
 # DIN-MAND-001 — Cartão do Facilitador
 ## Peço, Logo Recebo (Ask and Receive)
 
-> **Grupo:** Soft Skills | **Temática:** Autoadvocacia | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Autoadvocacia | **Momento:** Fim de Sprint
 > **Duração:** 40 min | **Participantes:** 4–12 | **Modalidade:** Presencial
 
 ---

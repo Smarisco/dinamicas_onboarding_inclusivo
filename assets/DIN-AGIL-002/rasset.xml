@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Modularização; Integração de Componentes; Leitura de Requisitos</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Comunicação Descritiva; Negociação de Interfaces; Gestão de Frustração</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Barulho de blocos plásticos ao encaixar e desencaixar; Tensão de integração sob pressão de prazo; Discussões simultâneas entre equipes no espaço central</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">35 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">9</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">12</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Time de Desenvolvimento; Arquiteto de Software; Professor de Engenharia de Software; Facilitador Scrum</descriptor>
+    <descriptor name="duracao">35 min</descriptor>
+    <descriptor name="qtd-min-participantes">9</descriptor>
+    <descriptor name="qtd-max-participantes">12</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Time de Desenvolvimento; Arquiteto de Software; Professor de Engenharia de Software; Facilitador Scrum</descriptor>
   </classification>
 
   <solution>

@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Feedback Estruturado; Comunicação Não-Violenta; Escuta Empática</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Receber feedback inesperado sobre comportamento ou desempenho; Pressão de responder imediatamente sem tempo para processar</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">45 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">4</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">12</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">presencial ou digital</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Líder Técnico</descriptor>
+    <descriptor name="duracao">45 min</descriptor>
+    <descriptor name="qtd-min-participantes">4</descriptor>
+    <descriptor name="qtd-max-participantes">12</descriptor>
+    <descriptor name="modalidade">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Líder Técnico</descriptor>
   </classification>
 
   <solution>

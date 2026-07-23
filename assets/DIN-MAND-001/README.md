@@ -1,6 +1,6 @@
 # DIN-MAND-001 — Peço, Logo Recebo
 
-> **Grupo:** Soft Skills | **Temática:** Autoadvocacia | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Autoadvocacia | **Momento:** Fim de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Peço, Logo Recebo (Ask and Receive) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Autoadvocacia |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

@@ -1,6 +1,6 @@
 # DIN-SOFT-001 — A Moeda de Duas Faces
 
-> **Grupo:** Soft Skills | **Temática:** Colaboração em Pares | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Colaboração em Pares | **Momento:** Fim de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | A Moeda de Duas Faces (The Two-Sided Coin) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Colaboração em Pares |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

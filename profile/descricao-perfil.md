@@ -57,8 +57,6 @@ Every asset conforming to this profile **must** include a `<classification>` sec
 | `ctx-sensorial` | Eixo de Perfil Sensorial | `dimensao-sensorial` |
 | `ctx-sprint` | Eixo de Contexto Ágil | `momento-sprint` |
 
-An optional fourth context `ctx-operacional` (Metadados Operacionais) may carry `duracao`, `participantes`, `modalidade`, and `publico-alvo` descriptors.
-
 The `momento-sprint` descriptor accepts exactly three values: `inicio`, `meio`, or `fim`.
 
 ### Extension 2 — Three Mandatory Classification Contexts

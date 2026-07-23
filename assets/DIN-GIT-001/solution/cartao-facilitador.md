@@ -1,7 +1,7 @@
 # DIN-GIT-001 — Cartão do Facilitador
 ## Git em Conflito (Git in Conflict)
 
-> **Grupo:** Hard Skills | **Temática:** Controle de Versão | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Controle de Versão | **Momento:** Meio de Sprint
 > **Duração:** 60 min | **Participantes:** 2–6 | **Modalidade:** Digital
 
 ---

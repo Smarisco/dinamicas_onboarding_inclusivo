@@ -1,6 +1,6 @@
 # DIN-FEED-001 — Feedback em 4 Passos
 
-> **Grupo:** Soft Skills | **Temática:** Feedback | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Feedback | **Momento:** Fim de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Feedback em 4 Passos (Four-Step Feedback) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Feedback |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

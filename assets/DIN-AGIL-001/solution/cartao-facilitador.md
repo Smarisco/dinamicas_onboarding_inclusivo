@@ -1,7 +1,7 @@
 # DIN-AGIL-001 — Cartão do Facilitador
 ## Jogo das Bolinhas (Ballpoint Game)
 
-> **Grupo:** Hard Skills | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
 > **Duração:** 40 min | **Participantes:** 3–10 | **Modalidade:** Presencial
 
 ---

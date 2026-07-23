@@ -1,6 +1,6 @@
 # DIN-COM-001 — O Campo Minado
 
-> **Grupo:** Soft Skills | **Temática:** Comunicação | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Comunicação | **Momento:** Meio de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | O Campo Minado (The Minefield) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Comunicação |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

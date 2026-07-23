@@ -1,6 +1,6 @@
 # DIN-PLAN-001 — Planning Poker
 
-> **Grupo:** Hard Skills | **Temática:** Estimativa Ágil | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Estimativa Ágil | **Momento:** Início de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Planning Poker |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Hard Skills |
+| **Domínio** | Habilidades Técnicas |
 | **Subdomínio** | Estimativa Ágil |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

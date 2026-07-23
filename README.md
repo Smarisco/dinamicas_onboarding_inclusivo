@@ -92,11 +92,9 @@ Cada dinâmica é classificada segundo três eixos ortogonais que permitem filtr
 
 | Eixo  | O que classifica | Exemplo |
 |-------------------|-----------------|---------|
-| `Eixo de Habilidades` | Hard/soft skills desenvolvidas | Comunicação assertiva, controle de versão |
+| `Eixo de Habilidades` | habilidades técnicas/não técnicas desenvolvidas | Comunicação assertiva, controle de versão |
 | `Eixo de Perfil Sensorial` | Dimensões de neurodiversidade endereçadas | Sensibilidade auditiva, previsibilidade |
 | `Eixo de Contexto Ágil` | Momento da sprint: `inicio`, `meio` ou `fim` | Retrospectiva → fim |
-
-Um quarto eixo operacional (`ctx-operacional`) registra duração, participantes, modalidade e público-alvo.
 
 ---
 
@@ -104,18 +102,18 @@ Um quarto eixo operacional (`ctx-operacional`) registra duração, participantes
 
 | ID | Nome | Grupo | Momento | Modalidade |
 |----|------|-------|---------|------------|
-| DIN-AGIL-001 | Jogo das Bolinhas | Hard Skills | início | presencial |
-| DIN-AGIL-002 | Construção com Blocos | Hard Skills | início | presencial |
-| DIN-GIT-001 | Git em Conflito | Hard Skills | meio | digital |
-| DIN-PLAN-001 | Planning Poker | Hard Skills | início | presencial |
-| DIN-TDD-001 | TDD Kata | Hard Skills | meio | digital |
-| DIN-REV-001 | CRSG | Hard Skills | meio | digital |
-| DIN-MAND-001 | Peço, Logo Recebo | Soft Skills | fim | presencial |
-| DIN-RETRO-001 | Retrospectiva Guiada | Soft Skills | fim | presencial ou digital |
-| DIN-SOFT-001 | A Moeda de Duas Faces | Soft Skills | fim | presencial |
-| DIN-COM-001 | O Campo Minado | Soft Skills | meio | presencial |
-| DIN-FEED-001 | Feedback em 4 Passos | Soft Skills | fim | presencial ou digital |
-| DIN-PSAF-001 | Termômetro Psicológico | Soft Skills | fim | presencial ou digital |
+| DIN-AGIL-001 | Jogo das Bolinhas | Habilidades Técnicas | início | presencial |
+| DIN-AGIL-002 | Construção com Blocos | Habilidades Técnicas | início | presencial |
+| DIN-GIT-001 | Git em Conflito | Habilidades Técnicas | meio | digital |
+| DIN-PLAN-001 | Planning Poker | Habilidades Técnicas | início | presencial |
+| DIN-TDD-001 | TDD Kata | Habilidades Técnicas | meio | digital |
+| DIN-REV-001 | CRSG | Habilidades Técnicas | meio | digital |
+| DIN-MAND-001 | Peço, Logo Recebo | Habilidades Não Técnicas | fim | presencial |
+| DIN-RETRO-001 | Retrospectiva Guiada | Habilidades Não Técnicas | fim | presencial ou digital |
+| DIN-SOFT-001 | A Moeda de Duas Faces | Habilidades Não Técnicas | fim | presencial |
+| DIN-COM-001 | O Campo Minado | Habilidades Não Técnicas | meio | presencial |
+| DIN-FEED-001 | Feedback em 4 Passos | Habilidades Não Técnicas | fim | presencial ou digital |
+| DIN-PSAF-001 | Termômetro Psicológico | Habilidades Não Técnicas | fim | presencial ou digital |
 
 ---
 

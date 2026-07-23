@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Algoritmos (passo a passo); Debugging em tempo real</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Escuta Ativa; Clareza na Comunicação; Empatia</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Venda ou objeto cobrindo os olhos (sensação de restrição); Ruído de múltiplas duplas guiando simultaneamente; Pressão de tempo durante a travessia</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">8</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">12</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor Júnior; Desenvolvedor Sênior; Tech Lead; Facilitador de Pair Programming</descriptor>
+    <descriptor name="duracao">40 min</descriptor>
+    <descriptor name="qtd-min-participantes">8</descriptor>
+    <descriptor name="qtd-max-participantes">12</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor Júnior; Desenvolvedor Sênior; Tech Lead; Facilitador de Pair Programming</descriptor>
   </classification>
 
   <solution>

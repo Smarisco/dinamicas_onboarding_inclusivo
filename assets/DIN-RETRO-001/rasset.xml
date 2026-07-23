@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">50 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">3</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">10</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">presencial ou digital</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Scrum Master; Desenvolvedor; Product Owner; QA / Tester; Qualquer membro de time ágil</descriptor>
+    <descriptor name="duracao">50 min</descriptor>
+    <descriptor name="qtd-min-participantes">3</descriptor>
+    <descriptor name="qtd-max-participantes">10</descriptor>
+    <descriptor name="modalidade">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo">Scrum Master; Desenvolvedor; Product Owner; QA / Tester; Qualquer membro de time ágil</descriptor>
   </classification>
 
   <solution>

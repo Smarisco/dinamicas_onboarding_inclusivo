@@ -1,6 +1,6 @@
 # DIN-PSAF-001 — Termômetro Psicológico
 
-> **Grupo:** Soft Skills | **Temática:** Segurança Psicológica | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Segurança Psicológica | **Momento:** Fim de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Termômetro Psicológico (Psychological Thermometer) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Segurança Psicológica |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

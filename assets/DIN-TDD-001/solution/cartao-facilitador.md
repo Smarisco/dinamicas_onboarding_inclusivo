@@ -1,7 +1,7 @@
 # DIN-TDD-001 — Cartão do Facilitador
 ## TDD Kata
 
-> **Grupo:** Hard Skills | **Temática:** Qualidade de Software | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Qualidade de Software | **Momento:** Meio de Sprint
 > **Duração:** 60 min | **Participantes:** 1–4 | **Modalidade:** Digital
 
 ---

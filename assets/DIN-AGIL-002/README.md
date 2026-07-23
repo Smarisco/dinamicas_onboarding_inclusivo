@@ -1,6 +1,6 @@
 # DIN-AGIL-002 — Construção com Blocos
 
-> **Grupo:** Hard Skills | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Construção com Blocos (Block Building) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Hard Skills |
+| **Domínio** | Habilidades Técnicas |
 | **Subdomínio** | Metodologias Ágeis |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

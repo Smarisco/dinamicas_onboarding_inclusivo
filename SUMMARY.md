@@ -31,7 +31,7 @@
 
 ## Eixo: Grupo de Habilidades
 
-### Hard Skills
+### Habilidades Técnicas
 * [DIN-AGIL-001 — Jogo das Bolinhas](assets/DIN-AGIL-001/README.md)
 * [DIN-AGIL-002 — Construção com Blocos](assets/DIN-AGIL-002/README.md)
 * [DIN-GIT-001 — Git em Conflito](assets/DIN-GIT-001/README.md)
@@ -39,7 +39,7 @@
 * [DIN-TDD-001 — TDD Kata](assets/DIN-TDD-001/README.md)
 * [DIN-REV-001 — CRSG](assets/DIN-REV-001/README.md)
 
-### Soft Skills
+### Habilidades Não Técnicas
 * [DIN-MAND-001 — Peço, Logo Recebo](assets/DIN-MAND-001/README.md)
 * [DIN-RETRO-001 — Retrospectiva Guiada](assets/DIN-RETRO-001/README.md)
 * [DIN-SOFT-001 — A Moeda de Duas Faces](assets/DIN-SOFT-001/README.md)

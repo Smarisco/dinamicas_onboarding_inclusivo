@@ -1,7 +1,7 @@
 # DIN-PLAN-001 — Cartão do Facilitador
 ## Planning Poker
 
-> **Grupo:** Hard Skills | **Temática:** Estimativa Ágil | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Estimativa Ágil | **Momento:** Início de Sprint
 > **Duração:** 60 min | **Participantes:** 3–9 | **Modalidade:** Presencial
 
 ---

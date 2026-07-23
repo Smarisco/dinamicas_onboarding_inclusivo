@@ -1,6 +1,6 @@
 # DIN-AGIL-001 — Jogo das Bolinhas
 
-> **Grupo:** Hard Skills | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
 
 ---
 
@@ -34,8 +34,8 @@
 
 | Tipo | Habilidades |
 |------|-------------|
-| **Soft Skills** | Auto-organização; Segurança Psicológica; Comunicação Explícita |
-| **Hard Skills** | Estimativa (Velocity); Pensamento Sistêmico |
+| **Habilidades Não Técnicas** | Auto-organização; Segurança Psicológica; Comunicação Explícita |
+| **Habilidades Técnicas** | Estimativa (Velocity); Pensamento Sistêmico |
 
 ---
 

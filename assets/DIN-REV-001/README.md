@@ -1,6 +1,6 @@
 # DIN-REV-001 — CRSG (Code Review Simulation Game)
 
-> **Grupo:** Hard Skills | **Temática:** Revisão de Código | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Revisão de Código | **Momento:** Meio de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | CRSG — Code Review Simulation Game |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Hard Skills |
+| **Domínio** | Habilidades Técnicas |
 | **Subdomínio** | Revisão de Código |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

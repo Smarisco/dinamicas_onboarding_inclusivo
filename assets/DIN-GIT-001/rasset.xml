@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Git (branches, merge, rebase); Resolução de Conflitos de Versionamento; Code Review</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Comunicação Técnica; Negociação de Código; Trabalho em Par</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Medo de 'quebrar' o repositório compartilhado; Mensagens de erro Git percebidas como falha pessoal; Pressão de tempo na resolução</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">60 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">2</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">6</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">digital</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
+    <descriptor name="duracao">60 min</descriptor>
+    <descriptor name="qtd-min-participantes">2</descriptor>
+    <descriptor name="qtd-max-participantes">6</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
   </classification>
 
   <solution>

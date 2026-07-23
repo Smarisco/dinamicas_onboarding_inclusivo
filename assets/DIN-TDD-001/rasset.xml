@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Test-Driven Development; Ciclo Red-Green-Refactor; Cobertura de Testes</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Disciplina de Processo; Paciência Iterativa</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Frustração ao ver testes falhando (percepção de falha pessoal); Pressão de seguir o ciclo rigorosamente sem 'atalhos'</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">60 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">1</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">4</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">digital</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; QA / Tester; Engenheiro de Software em Onboarding</descriptor>
+    <descriptor name="duracao">60 min</descriptor>
+    <descriptor name="qtd-min-participantes">1</descriptor>
+    <descriptor name="qtd-max-participantes">4</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; QA / Tester; Engenheiro de Software em Onboarding</descriptor>
   </classification>
 
   <solution>

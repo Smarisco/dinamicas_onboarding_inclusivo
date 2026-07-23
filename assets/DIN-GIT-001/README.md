@@ -1,6 +1,6 @@
 # DIN-GIT-001 — Git em Conflito
 
-> **Grupo:** Hard Skills | **Temática:** Controle de Versão | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Controle de Versão | **Momento:** Meio de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Git em Conflito (Git in Conflict) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Hard Skills |
+| **Domínio** | Habilidades Técnicas |
 | **Subdomínio** | Controle de Versão |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

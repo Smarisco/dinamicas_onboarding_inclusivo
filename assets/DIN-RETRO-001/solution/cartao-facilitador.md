@@ -1,7 +1,7 @@
 # DIN-RETRO-001 — Cartão do Facilitador
 ## Retrospectiva Guiada (Guided Retrospective)
 
-> **Grupo:** Soft Skills | **Temática:** Cerimônias Ágeis | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Cerimônias Ágeis | **Momento:** Fim de Sprint
 > **Duração:** 50 min | **Participantes:** 3–10 | **Modalidade:** Presencial ou Digital
 
 ---

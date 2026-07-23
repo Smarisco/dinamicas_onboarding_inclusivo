@@ -1,7 +1,7 @@
 # DIN-REV-001 — Cartão do Facilitador
 ## CRSG — Code Review Simulation Game
 
-> **Grupo:** Hard Skills | **Temática:** Revisão de Código | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Revisão de Código | **Momento:** Meio de Sprint
 > **Duração:** 55 min | **Participantes:** 2–6 | **Modalidade:** Digital
 
 ---

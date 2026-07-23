@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Revisão de Código; Detecção de Defeitos; Refatoração</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">55 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">2</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">6</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">digital</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; QA / Tester; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
+    <descriptor name="duracao">55 min</descriptor>
+    <descriptor name="qtd-min-participantes">2</descriptor>
+    <descriptor name="qtd-max-participantes">6</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; QA / Tester; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
   </classification>
 
   <solution>

@@ -1,6 +1,6 @@
 # DIN-RETRO-001 — Retrospectiva Guiada
 
-> **Grupo:** Soft Skills | **Temática:** Cerimônias Ágeis | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Cerimônias Ágeis | **Momento:** Fim de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | Retrospectiva Guiada (Guided Retrospective) |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Soft Skills |
+| **Domínio** | Habilidades Não Técnicas |
 | **Subdomínio** | Cerimônias Ágeis |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

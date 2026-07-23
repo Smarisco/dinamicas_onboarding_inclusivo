@@ -36,17 +36,16 @@
     <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
     <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-    <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
     <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Estimativa (Velocity); Pensamento Sistêmico</descriptor>
     <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Auto-organização; Segurança Psicológica; Comunicação Explícita</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Ruído de bolinhas rígidas ao cair; Sinal sonoro abrupto do cronômetro; Aglomeração em espaços pequenos</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
-    <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
-    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">3</descriptor>
-    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">10</descriptor>
-    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
-    <descriptor name="publico-alvo"  context-id="ctx-operacional">Facilitador Scrum; Coach Ágil; Professor de Engenharia de Software; Time de Desenvolvimento</descriptor>
+    <descriptor name="duracao">40 min</descriptor>
+    <descriptor name="qtd-min-participantes">3</descriptor>
+    <descriptor name="qtd-max-participantes">10</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Facilitador Scrum; Coach Ágil; Professor de Engenharia de Software; Time de Desenvolvimento</descriptor>
   </classification>
 
   <solution>

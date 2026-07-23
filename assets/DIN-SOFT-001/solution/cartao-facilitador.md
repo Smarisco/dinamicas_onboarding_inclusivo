@@ -1,7 +1,7 @@
 # DIN-SOFT-001 — Cartão do Facilitador
 ## A Moeda de Duas Faces (The Two-Sided Coin)
 
-> **Grupo:** Soft Skills | **Temática:** Colaboração em Pares | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Colaboração em Pares | **Momento:** Fim de Sprint
 > **Duração:** 45 min | **Participantes:** 6–20 | **Modalidade:** Presencial
 
 ---

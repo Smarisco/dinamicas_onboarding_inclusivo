@@ -1,7 +1,7 @@
 # DIN-PSAF-001 — Cartão do Facilitador
 ## Termômetro Psicológico (Psychological Thermometer)
 
-> **Grupo:** Soft Skills | **Temática:** Segurança Psicológica | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Segurança Psicológica | **Momento:** Fim de Sprint
 > **Duração:** 40 min | **Participantes:** 3–10 | **Modalidade:** Presencial ou Digital
 
 ---

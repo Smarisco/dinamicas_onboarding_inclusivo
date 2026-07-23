@@ -1,7 +1,7 @@
 # DIN-FEED-001 — Cartão do Facilitador
 ## Feedback em 4 Passos (Four-Step Feedback)
 
-> **Grupo:** Soft Skills | **Temática:** Feedback | **Momento:** Fim de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Feedback | **Momento:** Fim de Sprint
 > **Duração:** 45 min | **Participantes:** 4–12 | **Modalidade:** Presencial ou Digital
 
 ---

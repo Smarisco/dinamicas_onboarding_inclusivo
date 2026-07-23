@@ -28,9 +28,8 @@
 
   <!-- =========================================================
        SECTION 2 — Mandatory Classification Context IDs
-       RAS-TEA requires every asset to carry at least the three
-       contexts defined below.  Additional optional contexts (e.g.
-       ctx-operacional) are permitted by the open-content model.
+       RAS-TEA requires every asset to carry exactly the three
+       contexts defined below.
   ========================================================= -->
 
   <xs:simpleType name="MandatoryContextId">
@@ -50,21 +49,9 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- Operational context id — optional fourth context -->
-  <xs:simpleType name="OptionalContextId">
-    <xs:annotation>
-      <xs:documentation>
-        Optional operational context admitted by the RAS-TEA profile.
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="ctx-operacional"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <!-- Union of all recognised context ids -->
+  <!-- Alias for the set of all recognised context ids -->
   <xs:simpleType name="ContextId">
-    <xs:union memberTypes="ras:MandatoryContextId ras:OptionalContextId"/>
+    <xs:union memberTypes="ras:MandatoryContextId"/>
   </xs:simpleType>
 
   <!-- =========================================================

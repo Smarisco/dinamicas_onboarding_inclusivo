@@ -1,6 +1,6 @@
 # DIN-TDD-001 — TDD Kata
 
-> **Grupo:** Hard Skills | **Temática:** Qualidade | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Qualidade | **Momento:** Meio de Sprint
 
 ---
 
@@ -12,7 +12,7 @@
 | **Nome** | TDD Kata |
 | **Versão RAS** | 3.0 |
 | **Autor** | Equipe RAS — ras-dinamicas@institucional.br |
-| **Domínio** | Hard Skills |
+| **Domínio** | Habilidades Técnicas |
 | **Subdomínio** | Qualidade |
 | **Status** | Em validação interna |
 | **Criação** | 2025-01-01 |

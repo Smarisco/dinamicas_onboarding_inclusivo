@@ -1,7 +1,7 @@
 # DIN-AGIL-002 — Cartão do Facilitador
 ## Construção com Blocos (Block Building)
 
-> **Grupo:** Hard Skills | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
+> **Grupo:** Habilidades Técnicas | **Temática:** Metodologias Ágeis | **Momento:** Início de Sprint
 > **Duração:** 35 min | **Participantes:** 9–12 | **Modalidade:** Presencial
 
 ---

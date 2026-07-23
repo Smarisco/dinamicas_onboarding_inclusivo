@@ -1,7 +1,7 @@
 # DIN-COM-001 — Cartão do Facilitador
 ## O Campo Minado (The Minefield)
 
-> **Grupo:** Soft Skills | **Temática:** Comunicação | **Momento:** Meio de Sprint
+> **Grupo:** Habilidades Não Técnicas | **Temática:** Comunicação | **Momento:** Meio de Sprint
 > **Duração:** 40 min | **Participantes:** 8–12 | **Modalidade:** Presencial
 
 ---
