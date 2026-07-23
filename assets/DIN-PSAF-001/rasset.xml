@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="Termômetro Psicológico"
+  id="DIN-PSAF-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Autoavaliação coletiva com escala visual 1-5 para medir segurança psicológica. Construtos E2.x + E3.x. Fichas anônimas e discussão coletiva para identificar barreiras e construir acordos.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Segurança Psicológica; Vulnerabilidade Profissional; Autorregulação</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de revelar vulnerabilidade em grupo; Medo de ser identificado mesmo com anonimato declarado; Resultados muito baixos que geram tensão no grupo</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">3</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">10</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Qualquer membro de time</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — Termômetro de Humor"
+                         context-id="ctx-sprint">
+        <description>Termômetro de humor — mede estado emocional atual; uso em check-ins diários</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Termômetro de Energia"
+                         context-id="ctx-sprint">
+        <description>Termômetro de energia — mede carga percebida; identifica esgotamento em sprints longos</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Multi-Dimensão"
+                         context-id="ctx-sprint">
+        <description>Multi-dimensão — 3 termômetros: segurança para errar / pedir ajuda / discordar</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Explicar segurança psicológica (Edmondson 1999) com exemplos concretos. Mostrar e explicar escala 1-5 com descrição literal de cada nível. Garantir e reforçar anonimato. Distribuir fichas anônimas.</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Marcação anônima (5 min): cada participante escreve apenas o número. Consolidação visual (5 min): facilitador marca pontos no termômetro sem identificar. Discussão coletiva (15 min): facilitar discussão sobre barreiras; participantes contribuem verbalmente ou por post-it.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Encerramento (5 min). Pergunta-chave: "O que a equipe se compromete a fazer diferente para aumentar a segurança psicológica?" Lição: Segurança psicológica é construída por comportamentos consistentes — não por declarações.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Fichas anônimas são o mecanismo central — ninguém precisa verbalizar seu número. Cada nível da escala tem descrição escrita explícita. Post-its disponíveis para contribuições escritas durante a discussão. Facilitador lê post-its em voz alta sem identificar autores.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se atmosfera ficar tensa após resultados baixos. Facilitador não revela números individuais em nenhuma circunstância. Online: votação anônima via Mentimeter com histograma em tempo real como alternativa.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Feedback em 4 Passos"
+    relationship-type="similar"
+    asset-id="DIN-FEED-001"
+    reference="assets/DIN-FEED-001/rasset.xml">
+    Feedback estruturado é instrumento que demonstra e fortalece segurança psicológica.
+  </related-asset>
+  <related-asset
+    name="Retrospectiva Guiada"
+    relationship-type="similar"
+    asset-id="DIN-RETRO-001"
+    reference="assets/DIN-RETRO-001/rasset.xml">
+    Retrospectivas constroem a base de confiança medida pelo termômetro.
+  </related-asset>
+
+</asset>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="Planning Poker"
+  id="DIN-PLAN-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Técnica de estimativa relativa com revelação simultânea de cartas. Construtos E1.x + E2.x. Gamification e Simulação para calibração de esforço e consenso técnico.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">Estimativa de Esforço; Gestão de Backlog; Story Points</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Negociação; Escuta Ativa; Tomada de Decisão Coletiva</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de justificar estimativa diferente da maioria; Discussões técnicas longas sem estrutura clara</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">60 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">3</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">9</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; Scrum Master; Product Owner; Tech Lead</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — Baralho T-Shirt"
+                         context-id="ctx-sprint">
+        <description>Baralho T-Shirt (XS/S/M/L/XL) — para times iniciantes em estimativa</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Versão Online"
+                         context-id="ctx-sprint">
+        <description>Versão online (Miro/PlanITPoker) — para remote onboarding</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Estimativa de Tarefas Técnicas"
+                         context-id="ctx-sprint">
+        <description>Estimativa de tarefas técnicas (não stories) — para refinamento técnico</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Distribuir baralhos (1 por participante). Explicar escala Fibonacci e o significado de ?, ∞ e ☕. Distribuir lista de User Stories para estimar. Anunciar regras: revelação simultânea obrigatória.</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>5 rodadas de estimativa: PO apresenta story → silêncio → revelação simultânea → discussão (se divergência) → consenso. Máximo 3 rodadas por story. Registrar estimativas e desvio padrão na Ficha KPI.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Pergunta-chave: "O que as divergências revelaram sobre a complexidade das tarefas?" Lição: Divergência na estimativa = divergência no entendimento técnico — discussão é o valor real.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Anunciar verbalmente E escrever no quadro o valor consensual de cada story. Sinal visual (cartão ou gesto) para revelar cartas — além do sinal verbal. Silêncio completo durante a seleção da carta. Distribuir agenda de stories por escrito antes da reunião.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se discussão técnica escalar para 10+ minutos sem convergência. Facilitador pode impor consenso por votação final após terceira rodada. Participante pode registrar justificativa por escrito antes de verbalizar.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Jogo das Bolinhas"
+    relationship-type="similar"
+    asset-id="DIN-AGIL-001"
+    reference="assets/DIN-AGIL-001/rasset.xml">
+    DIN-AGIL-001 introduz o conceito de velocity e throughput como base empírica para estimativa.
+  </related-asset>
+  <related-asset
+    name="Retrospectiva Guiada"
+    relationship-type="similar"
+    asset-id="DIN-RETRO-001"
+    reference="assets/DIN-RETRO-001/rasset.xml">
+    Retrospectiva permite revisar acurácia das estimativas do sprint anterior e melhorar o processo de Planning Poker.
+  </related-asset>
+
+</asset>

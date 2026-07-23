@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="Construção com Blocos (Block Building)"
+  id="DIN-AGIL-002">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Simulação de projeto modular com kits LEGO em que equipes constroem componentes separados que devem se integrar a uma estrutura-gabarito comum. Construtos E1.4 + E3.3.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">Modularização; Integração de Componentes; Leitura de Requisitos</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Comunicação Descritiva; Negociação de Interfaces; Gestão de Frustração</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Barulho de blocos plásticos ao encaixar e desencaixar; Tensão de integração sob pressão de prazo; Discussões simultâneas entre equipes no espaço central</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">35 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">9</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">12</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Time de Desenvolvimento; Arquiteto de Software; Professor de Engenharia de Software; Facilitador Scrum</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — LEGO Duplo"
+                         context-id="ctx-sensorial">
+        <description>LEGO Duplo — blocos maiores para acessibilidade motora</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Papel Quadriculado"
+                         context-id="ctx-sprint">
+        <description>Versão em papel quadriculado — sem peças físicas, acessível sem orçamento LEGO</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Times Distribuídos"
+                         context-id="ctx-sprint">
+        <description>Times distribuídos — videoconferência com comunicação apenas por texto/chat</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Separar kits LEGO por equipe. Colocar gabarito A3 lacrado no centro. Marcar espaço de integração com fita adesiva colorida. Distribuir cartas de restrição (uma por equipe).</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Arquiteto descreve verbalmente o sistema-alvo sem revelar gabarito (5 min). Equipes constroem módulos simultaneamente (15 min) sem ver as outras. Equipes levam módulos ao espaço central e tentam encaixar (5 min). Gabarito A3 revelado — comparar resultado real vs. esperado.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Pergunta-chave: "Onde ocorreu a falha de integração? Foi falta de comunicação ou requisito ambíguo?" Lição central: Big Picture &gt; Otimização local do componente.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Utilizar tapetes de feltro nas mesas (reduz impacto acústico dos blocos). Comunicação entre equipes preferencialmente por escrito ou desenho antes de verbal. Disponibilizar blocos Duplo como alternativa para participantes com dificuldades motoras finas.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se tensão entre equipes escalar para conflito interpessoal. Facilitador pode permitir consulta verbal por até 1 minuto entre equipes se bloqueio for total.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Jogo das Bolinhas"
+    relationship-type="similar"
+    asset-id="DIN-AGIL-001"
+    reference="assets/DIN-AGIL-001/rasset.xml">
+    Mesmo domínio ágil; DIN-AGIL-001 introduz fluxo e auto-organização como base cultural.
+  </related-asset>
+  <related-asset
+    name="O Campo Minado"
+    relationship-type="similar"
+    asset-id="DIN-COM-001"
+    reference="assets/DIN-COM-001/rasset.xml">
+    Ambas desenvolvem comunicação sob restrição entre papéis distintos.
+  </related-asset>
+
+</asset>

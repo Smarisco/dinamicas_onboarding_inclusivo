@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RAS-TEA Onboarding Profile — XSD Schema
+  Profile name  : RAS-TEA Onboarding Profile
+  id-history    : F1C842AD-CE85-4261-ACA7-178C457018A1
+                  ::31E5BFBF-B16E-4253-8037-98D70D07F35F
+                  ::TEA-ONB-PROF-2026-0001
+  Parent profile: RAS Default Profile 2.2
+  Version       : 1.0
+  Date          : 2026-05-17
+  License       : CC-BY 4.0
+  Description   : Minimal XSD extending RAS Default Profile 2.2 for ASD-inclusive
+                  software-engineering onboarding dynamics.
+-->
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ras="http://www.rational.com/ras/rasdefaultprofile2_0"
+  targetNamespace="http://www.rational.com/ras/rasdefaultprofile2_0"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+  <!-- =========================================================
+       SECTION 1 — Re-use of RAS Default Profile 2.2 namespace
+       The rasset.xml instances validated against this schema use
+       the same namespace as RAS Default Profile 2.2.  This schema
+       adds TEA-specific constraints on top of the base profile.
+  ========================================================= -->
+
+  <!-- =========================================================
+       SECTION 2 — Mandatory Classification Context IDs
+       RAS-TEA requires every asset to carry at least the three
+       contexts defined below.  Additional optional contexts (e.g.
+       ctx-operacional) are permitted by the open-content model.
+  ========================================================= -->
+
+  <xs:simpleType name="MandatoryContextId">
+    <xs:annotation>
+      <xs:documentation>
+        Enumeration of the three mandatory classification context
+        identifiers required by the RAS-TEA profile.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <!-- Eixo de Habilidades: maps hard-skill / soft-skill descriptors -->
+      <xs:enumeration value="ctx-habilidades"/>
+      <!-- Eixo de Perfil Sensorial: maps sensoryTriggers from OAP-1.0 -->
+      <xs:enumeration value="ctx-sensorial"/>
+      <!-- Eixo de Contexto Ágil: maps sprint_moment (inicio / meio / fim) -->
+      <xs:enumeration value="ctx-sprint"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Operational context id — optional fourth context -->
+  <xs:simpleType name="OptionalContextId">
+    <xs:annotation>
+      <xs:documentation>
+        Optional operational context admitted by the RAS-TEA profile.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ctx-operacional"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Union of all recognised context ids -->
+  <xs:simpleType name="ContextId">
+    <xs:union memberTypes="ras:MandatoryContextId ras:OptionalContextId"/>
+  </xs:simpleType>
+
+  <!-- =========================================================
+       SECTION 3 — Mandatory Solution Artifact Types
+       Every RAS-TEA asset MUST include at least these two artifact
+       types in its <solution> section (RAS Sec. 6.4.6).
+  ========================================================= -->
+
+  <xs:simpleType name="RequiredArtifactType">
+    <xs:annotation>
+      <xs:documentation>
+        The two artifact types that are mandatory in every RAS-TEA asset.
+        cartao-facilitador — facilitator card with step-by-step instructions.
+        modelo-debriefing  — debriefing template for post-activity reflection.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="cartao-facilitador"/>
+      <xs:enumeration value="modelo-debriefing"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Permitted artifact types (superset — open extension) -->
+  <xs:simpleType name="ArtifactType">
+    <xs:annotation>
+      <xs:documentation>
+        Full set of artifact type tokens recognised by the RAS-TEA profile.
+        The two required types are listed first; additional types are allowed.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="cartao-facilitador"/>
+      <xs:enumeration value="modelo-debriefing"/>
+      <xs:enumeration value="checklist"/>
+      <xs:enumeration value="guia-de-personalizacao"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- =========================================================
+       SECTION 4 — Profile Identification Constraint
+       The id-history attribute on <profile> MUST match the
+       canonical RAS-TEA chain shown below.
+  ========================================================= -->
+
+  <xs:simpleType name="ProfileIdHistory">
+    <xs:annotation>
+      <xs:documentation>
+        Canonical id-history value for RAS-TEA Onboarding Profile:
+          Core RAS guid :: RAS Default Profile 2.2 guid :: TEA profile id
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- =========================================================
+       SECTION 5 — Accessibility Profile Token
+       All assets must declare OAP-1.0 compliance in their profile
+       description or usage section.
+  ========================================================= -->
+
+  <xs:simpleType name="AccessibilityProfileToken">
+    <xs:annotation>
+      <xs:documentation>
+        Token identifying the Onboarding Accessibility Profile version
+        required by every RAS-TEA asset (OAP-1.0).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OAP-1.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- =========================================================
+       SECTION 6 — Sprint Moment Enumeration
+       Allowed values for the momento-sprint descriptor.
+  ========================================================= -->
+
+  <xs:simpleType name="SprintMoment">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="inicio"/>
+      <xs:enumeration value="meio"/>
+      <xs:enumeration value="fim"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

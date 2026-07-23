@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="Retrospectiva Guiada"
+  id="DIN-RETRO-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Facilitação estruturada de retrospectiva ágil no modelo Derby &amp; Larsen (5 fases). Construtos E3.x + E2.x. Reflexão crítica coletiva e melhoria contínua.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">50 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">3</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">10</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Scrum Master; Desenvolvedor; Product Owner; QA / Tester; Qualquer membro de time ágil</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — Estrelas e Desejos"
+                         context-id="ctx-sprint">
+        <description>Estrelas e Desejos — perguntas: 'O que brilhou?' e 'O que desejo para o próximo sprint?'</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Barco e Âncoras"
+                         context-id="ctx-sprint">
+        <description>Barco e Âncoras — metáfora visual: vento (impulso) vs. âncora (bloqueio)</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Online"
+                         context-id="ctx-sprint">
+        <description>Online (Miro/Metroretro) — ferramentas digitais com post-its virtuais para times remotos</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Preparar quadro com 3 colunas: 'O que foi bem?', 'O que pode melhorar?', 'Ações'. Escrever estrutura das 5 fases no quadro. Configurar timer visível para cada fase.</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Set the Stage (5 min): check-in com palavra/emoji. Gather Data (10 min): silêncio — todos escrevem post-its e colam nas colunas. Generate Insights (15 min): agrupar post-its; nomear clusters; votar. Decide What to Do (15 min): top 1-3 clusters → ação concreta + dono + prazo.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Close the Retrospective (5 min). Pergunta-chave: "Esta retro foi útil? Como melhorar a próxima?" Lição: Melhoria contínua é processo — cada retro deve melhorar a próxima.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Silêncio obrigatório durante a fase Gather Data. Timer visível exibido durante toda a fase de escrita. Estrutura das 5 fases anunciada antes de começar. Facilitador anuncia início e fim de cada fase com frase padronizada.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se participante demonstrar resistência a expor percepções negativas. Oferecer opção de enviar post-its anonimamente ao facilitador antes da sessão. Check-in pode ser feito com emoji em vez de palavra falada.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Planning Poker"
+    relationship-type="similar"
+    asset-id="DIN-PLAN-001"
+    reference="assets/DIN-PLAN-001/rasset.xml">
+    Retrospectiva permite revisar acurácia das estimativas do sprint geradas no Planning Poker.
+  </related-asset>
+  <related-asset
+    name="Feedback em 4 Passos"
+    relationship-type="similar"
+    asset-id="DIN-FEED-001"
+    reference="assets/DIN-FEED-001/rasset.xml">
+    Feedback estruturado complementa a cultura de melhoria da retrospectiva — as ações da retro podem ser comunicadas via modelo Pendleton.
+  </related-asset>
+
+</asset>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="CRSG — Code Review Simulation Game"
+  id="DIN-REV-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Simulação de code review com defeitos intencionais e checklists estruturados. Construtos E1.x + E2.x. Identificação sistemática de defeitos e feedback técnico construtivo.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">Revisão de Código; Detecção de Defeitos; Refatoração</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">55 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">2</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">6</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">digital</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; QA / Tester; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — Múltiplas Linguagens"
+                         context-id="ctx-sprint">
+        <description>Múltiplas linguagens — Python, JS, Java em código separado</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Foco em Padrões de Design"
+                         context-id="ctx-sprint">
+        <description>Foco em padrões de design — violações de SOLID, DRY, KISS</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — PR Real Anonimizado"
+                         context-id="ctx-sprint">
+        <description>PR real do próprio time anonimizado — para times avançados</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Distribuir código-fonte (impresso ou digital) e checklists de revisão. Explicar objetivo e tipos de defeito. Mostrar exemplo de comentário construtivo vs. destrutivo. Anunciar estrutura completa: ler → identificar → categorizar → comentar → comparar.</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Revisão individual/dupla (20 min): usar checklist para identificar defeitos (Bug | Code Smell | Segurança | Performance | Legibilidade). Escrever comentário para cada defeito encontrado. Revisão coletiva (15 min): projetar código; percorrer linha a linha; comparar comentários. Prática de comentário (5 min): reformular 1 comentário destrutivo em construtivo.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Pergunta-chave: "Quais defeitos ninguém encontrou? O que isso nos diz sobre nossos pontos cegos?" Lição: Code review é uma skill — checklists e prática aumentam cobertura.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Fornecer código com syntax highlighting (não plain text). Projetar código com fonte ≥ 14pt para facilitar leitura coletiva. Checklists com categorias explícitas eliminam categorização espontânea. Gabarito do facilitador disponível ao final para comparação objetiva.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se participante demonstrar ansiedade ao receber feedback público. Revisão individual antes da coletiva garante preparo sem exposição imediata. Papel de registrador disponível na revisão coletiva.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Git em Conflito"
+    relationship-type="similar"
+    asset-id="DIN-GIT-001"
+    reference="assets/DIN-GIT-001/rasset.xml">
+    Práticas complementares: conflitos Git surgem de alterações que deveriam ter sido revisadas.
+  </related-asset>
+  <related-asset
+    name="TDD Kata"
+    relationship-type="similar"
+    asset-id="DIN-TDD-001"
+    reference="assets/DIN-TDD-001/rasset.xml">
+    TDD e code review são práticas complementares de qualidade — código com testes é mais fácil de revisar.
+  </related-asset>
+
+</asset>

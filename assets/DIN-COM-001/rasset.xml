@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="O Campo Minado (The Minefield)"
+  id="DIN-COM-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Simulação de navegação verbal em campo com objetos — participante vendado guiado por parceiro. Construtos E3.1 + E2.5. Comunicação precisa, escuta ativa e confiança em pares Sênior/Júnior.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">Algoritmos (passo a passo); Debugging em tempo real</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Escuta Ativa; Clareza na Comunicação; Empatia</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Venda ou objeto cobrindo os olhos (sensação de restrição); Ruído de múltiplas duplas guiando simultaneamente; Pressão de tempo durante a travessia</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">8</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">12</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">presencial</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor Júnior; Desenvolvedor Sênior; Tech Lead; Facilitador de Pair Programming</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — Sem Venda (Escrita Prévia)"
+                         context-id="ctx-sensorial">
+        <description>Sem venda (escrita prévia) — Programador escreve lista; Sistema executa lendo</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — Remota via Chat"
+                         context-id="ctx-sprint">
+        <description>Remota via chat — instruções por Slack com delay de 5s entre mensagens</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Múltiplos Sistemas"
+                         context-id="ctx-sprint">
+        <description>Múltiplos Sistemas — 1 Programador guia 2-3 Sistemas simultâneos</description>
+      </variability-point>
+      <variability-point id="vp-var4" name="VAR4 — Campo Codificado"
+                         context-id="ctx-sprint">
+        <description>Campo codificado — comandos em pseudocódigo para perfis técnicos avançados</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Distribuir 10-15 objetos aleatoriamente. Marcar partida e chegada com fita. Distribuir Cartão de Comandos (ART-03D). Reforçar literalidade das instruções: "O Sistema executa exatamente o que ouve — 2 passos significa 2 passos".</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Travessia Papel 1 (10 min): "Sistema" entra vendado/com óculos. "Programador" guia verbalmente. Registrar colisões. Inversão de papéis (2 min). Travessia Papel 2 (10 min): repetir com papéis invertidos. Registrar colisões.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Debriefing (10 min). Pergunta-chave: "Quantas instruções foram ambíguas? O que causou mais colisões?" Lição: Comunicação precisa elimina bugs — ambiguidade tem custo mensurável.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Oferecer óculos opacos como alternativa à venda para perfis com sensibilidade tátil na cabeça. Usar apenas objetos leves e sem arestas (garrafas plásticas, almofadas, cones de EVA). Realizar duplas em espaços separados se múltiplas duplas simultâneas. Facilitador sinaliza início/fim com gesto visual além do verbal.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se participante demonstrar ansiedade com venda/restrição visual. Oferecer versão 'escrita prévia': Programador escreve instruções antes; Sistema executa lendo. Permitir participação como observador/registrador da Ficha KPI.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="Jogo das Bolinhas"
+    relationship-type="similar"
+    asset-id="DIN-AGIL-001"
+    reference="assets/DIN-AGIL-001/rasset.xml">
+    Ambas desenvolvem auto-organização e comunicação intra-time; DIN-AGIL-001 é recomendada como base.
+  </related-asset>
+  <related-asset
+    name="A Moeda de Duas Faces"
+    relationship-type="similar"
+    asset-id="DIN-SOFT-001"
+    reference="assets/DIN-SOFT-001/rasset.xml">
+    Ambas exploram empatia e inversão de perspectiva; DIN-SOFT-001 aprofunda conflito Dev/QA após consolidar comunicação bilateral.
+  </related-asset>
+
+</asset>

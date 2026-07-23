@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<asset
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      ../../profile/ras-tea-profile.xsd"
+  name="TDD Kata"
+  id="DIN-TDD-001">
+
+  <profile
+    name="RAS-TEA Onboarding Profile"
+    id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001"
+    version-major="1"
+    version-minor="0">
+    <description>
+      RAS-TEA specialization for inclusive ASD onboarding dynamics.
+    </description>
+    <related-profile
+      name="RAS Default Profile"
+      id="31E5BFBF-B16E-4253-8037-98D70D07F35F"
+      version-major="2"
+      version-minor="2"
+      parent="F1C842AD-CE85-4261-ACA7-178C457018A1">
+      RAS Default Profile 2.2
+    </related-profile>
+  </profile>
+
+  <description>Prática repetitiva em que o participante implementa problema simples seguindo ciclo TDD. Construtos E1.x + E2.x. Internalizar disciplina Red-Green-Refactor.</description>
+
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+    <context id="ctx-operacional"  name="Metadados Operacionais"/>
+
+    <descriptor name="hard-skill" context-id="ctx-habilidades">Test-Driven Development; Ciclo Red-Green-Refactor; Cobertura de Testes</descriptor>
+    <descriptor name="soft-skill" context-id="ctx-habilidades">Disciplina de Processo; Paciência Iterativa</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Frustração ao ver testes falhando (percepção de falha pessoal); Pressão de seguir o ciclo rigorosamente sem 'atalhos'</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao"       context-id="ctx-operacional">60 min</descriptor>
+    <descriptor name="qtd-min-participantes" context-id="ctx-operacional">1</descriptor>
+    <descriptor name="qtd-max-participantes" context-id="ctx-operacional">4</descriptor>
+    <descriptor name="modalidade"    context-id="ctx-operacional">digital</descriptor>
+    <descriptor name="publico-alvo"  context-id="ctx-operacional">Desenvolvedor; QA / Tester; Engenheiro de Software em Onboarding</descriptor>
+  </classification>
+
+  <solution>
+    <artifact
+      id="art-cartao"
+      name="Cartão do Facilitador"
+      type="cartao-facilitador"
+      reference="solution/cartao-facilitador.md">
+      <artifact-context context-id="ctx-sprint"/>
+      <variability-point id="vp-var1" name="VAR1 — FizzBuzz Kata"
+                         context-id="ctx-sprint">
+        <description>FizzBuzz Kata — para iniciantes absolutos em TDD</description>
+      </variability-point>
+      <variability-point id="vp-var2" name="VAR2 — String Calculator Kata"
+                         context-id="ctx-sprint">
+        <description>String Calculator Kata — nível intermediário, requisitos incrementais</description>
+      </variability-point>
+      <variability-point id="vp-var3" name="VAR3 — Ping-Pong TDD"
+                         context-id="ctx-sprint">
+        <description>Ping-Pong TDD — prática em pair programming</description>
+      </variability-point>
+    </artifact>
+    <artifact
+      id="art-debriefing"
+      name="Modelo de Debriefing"
+      type="modelo-debriefing"
+      reference="solution/modelo-debriefing.md"/>
+    <artifact
+      id="art-checklist"
+      name="Checklist de Materiais"
+      type="checklist"
+      reference="solution/checklist.md"/>
+    <artifact
+      id="art-custom"
+      name="Guia de Personalização"
+      type="guia-de-personalizacao"
+      reference="solution/guia-de-personalizacao.md"/>
+  </solution>
+
+  <usage>
+    <asset-activity>
+      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
+        <description>Configurar ambiente com IDE + framework de testes. Apresentar kata com requisitos incrementais numerados. Explicar ciclo com poster visual: Red → Green → Refactor. Demonstração ao vivo (10 min) do primeiro requisito.</description>
+      </activity>
+      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
+        <description>Prática guiada (20 min): participantes implementam próximos requisitos com facilitador disponível. Prática autônoma (15 min): participantes continuam sem intervenção. Regra crítica: nunca escrever linha de produção sem teste falhando antes.</description>
+      </activity>
+      <activity id="act-scaffolding-03" task="Debriefing-final">
+        <description>Pergunta-chave: "Quando você quis pular o teste? O que te impediu?" Lição: TDD é disciplina, não velocidade — o teste é o design.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-sensorial-01" task="Atencao-sensorial">
+        <description>Poster visual do ciclo Red-Green-Refactor visível na tela durante toda a prática. IDE configurada para mostrar indicadores vermelhos/verdes claramente. Antes de cada linha de código: verificar estado atual (Red/Green/Refactor). Kata com requisitos incrementais numerados — participante sabe o que vem a seguir.</description>
+      </activity>
+    </asset-activity>
+    <asset-activity>
+      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
+        <description>Interromper se participante demonstrar frustração excessiva com testes falhando. Reforçar que Red é o estado inicial correto e esperado. Permitir prática solo para participantes que preferem ritmo próprio.</description>
+      </activity>
+    </asset-activity>
+  </usage>
+
+  <related-asset
+    name="CRSG"
+    relationship-type="similar"
+    asset-id="DIN-REV-001"
+    reference="assets/DIN-REV-001/rasset.xml">
+    TDD e code review são práticas complementares de qualidade — código com testes TDD é mais fácil de revisar.
+  </related-asset>
+  <related-asset
+    name="Git em Conflito"
+    relationship-type="similar"
+    asset-id="DIN-GIT-001"
+    reference="assets/DIN-GIT-001/rasset.xml">
+    Código com cobertura TDD reduz conflitos de integração; foco comum em qualidade de código colaborativo.
+  </related-asset>
+
+</asset>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  catalog.xml — RAS-TEA Asset Catalog
+  Repository  : dinamicas-onboarding
+  Profile     : RAS-TEA Onboarding Profile 1.0
+  Generated   : 2026-05-17
+  License     : CC-BY 4.0
+
+  Lists all 12 reusable onboarding dynamics.
+  Primary navigation axes:
+    grupo         — Hard Skills | Soft Skills
+    tematica      — Subdomínio (e.g. Metodologias Ágeis, Feedback …)
+    momento-sprint — inicio | meio | fim
+-->
+<catalog
+  xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
+                      profile/ras-tea-profile.xsd"
+  name="dinamicas-onboarding"
+  version="1.0"
+  date="2026-05-17"
+  profile-id-history="F1C842AD-CE85-4261-ACA7-178C457018A1::31E5BFBF-B16E-4253-8037-98D70D07F35F::TEA-ONB-PROF-2026-0001">
+
+  <description>
+    Catalog of 12 reusable ASD-inclusive onboarding dynamics for software
+    engineering teams, structured according to the RAS-TEA Onboarding Profile
+    (specialisation of OMG RAS Default Profile 2.2).
+  </description>
+
+  <!-- ===========================================================
+       HARD SKILLS — 6 assets
+  =========================================================== -->
+
+  <asset-entry
+    id="DIN-AGIL-001"
+    name="Jogo das Bolinhas"
+    reference="assets/DIN-AGIL-001/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Metodologias Ágeis"
+      momento-sprint="inicio"
+      duracao="40 min"
+      qtd-min-participantes="3" qtd-max-participantes="10"
+      modalidade="presencial"
+      dimensao-sensorial="Ruído de bolinhas rígidas ao cair; Sinal sonoro abrupto do cronômetro; Aglomeração em espaços pequenos"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-AGIL-002"
+    name="Construção com Blocos"
+    reference="assets/DIN-AGIL-002/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Metodologias Ágeis"
+      momento-sprint="inicio"
+      duracao="35 min"
+      qtd-min-participantes="9" qtd-max-participantes="12"
+      modalidade="presencial"
+      dimensao-sensorial="Barulho de blocos plásticos ao encaixar e desencaixar; Tensão de integração sob pressão de prazo; Discussões simultâneas entre equipes no espaço central"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-GIT-001"
+    name="Git em Conflito"
+    reference="assets/DIN-GIT-001/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Controle de Versão"
+      momento-sprint="meio"
+      duracao="60 min"
+      qtd-min-participantes="2" qtd-max-participantes="6"
+      modalidade="digital"
+      dimensao-sensorial="Medo de 'quebrar' o repositório compartilhado; Mensagens de erro Git percebidas como falha pessoal; Pressão de tempo na resolução"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-PLAN-001"
+    name="Planning Poker"
+    reference="assets/DIN-PLAN-001/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Estimativa Ágil"
+      momento-sprint="inicio"
+      duracao="60 min"
+      qtd-min-participantes="3" qtd-max-participantes="9"
+      modalidade="presencial"
+      dimensao-sensorial="Pressão de justificar estimativa diferente da maioria; Discussões técnicas longas sem estrutura clara"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-TDD-001"
+    name="TDD Kata"
+    reference="assets/DIN-TDD-001/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Qualidade de Software"
+      momento-sprint="meio"
+      duracao="60 min"
+      qtd-min-participantes="1" qtd-max-participantes="4"
+      modalidade="digital"
+      dimensao-sensorial="Frustração ao ver testes falhando (percepção de falha pessoal); Pressão de seguir o ciclo rigorosamente sem 'atalhos'"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-REV-001"
+    name="CRSG"
+    reference="assets/DIN-REV-001/rasset.xml">
+    <classification-summary
+      grupo="Hard Skills"
+      tematica="Revisão de Código"
+      momento-sprint="meio"
+      duracao="55 min"
+      qtd-min-participantes="2" qtd-max-participantes="6"
+      modalidade="digital"
+      dimensao-sensorial="Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos"/>
+  </asset-entry>
+
+  <!-- ===========================================================
+       SOFT SKILLS — 6 assets
+  =========================================================== -->
+
+  <asset-entry
+    id="DIN-MAND-001"
+    name="Peço, Logo Recebo"
+    reference="assets/DIN-MAND-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Autoadvocacia"
+      momento-sprint="fim"
+      duracao="40 min"
+      qtd-min-participantes="4" qtd-max-participantes="12"
+      modalidade="presencial"
+      dimensao-sensorial="Pressão de formular resposta verbal em tempo real; Feedback público sobre qualidade da comunicação; Incerteza sobre o que dizer sem script"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-RETRO-001"
+    name="Retrospectiva Guiada"
+    reference="assets/DIN-RETRO-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Cerimônias Ágeis"
+      momento-sprint="fim"
+      duracao="50 min"
+      qtd-min-participantes="3" qtd-max-participantes="10"
+      modalidade="presencial ou digital"
+      dimensao-sensorial="Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-SOFT-001"
+    name="A Moeda de Duas Faces"
+    reference="assets/DIN-SOFT-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Colaboração em Pares"
+      momento-sprint="fim"
+      duracao="45 min"
+      qtd-min-participantes="6" qtd-max-participantes="20"
+      modalidade="presencial"
+      dimensao-sensorial="Debate acalorado pode escalar para conflito interpessoal real; Pressão de defender posição contrária à opinião pessoal; Múltiplas vozes simultâneas sem bastão da fala"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-COM-001"
+    name="O Campo Minado"
+    reference="assets/DIN-COM-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Comunicação"
+      momento-sprint="meio"
+      duracao="40 min"
+      qtd-min-participantes="8" qtd-max-participantes="12"
+      modalidade="presencial"
+      dimensao-sensorial="Venda ou objeto cobrindo os olhos (sensação de restrição); Ruído de múltiplas duplas guiando simultaneamente; Pressão de tempo durante a travessia"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-FEED-001"
+    name="Feedback em 4 Passos"
+    reference="assets/DIN-FEED-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Feedback"
+      momento-sprint="fim"
+      duracao="45 min"
+      qtd-min-participantes="4" qtd-max-participantes="12"
+      modalidade="presencial ou digital"
+      dimensao-sensorial="Receber feedback inesperado sobre comportamento ou desempenho; Pressão de responder imediatamente sem tempo para processar"/>
+  </asset-entry>
+
+  <asset-entry
+    id="DIN-PSAF-001"
+    name="Termômetro Psicológico"
+    reference="assets/DIN-PSAF-001/rasset.xml">
+    <classification-summary
+      grupo="Soft Skills"
+      tematica="Segurança Psicológica"
+      momento-sprint="fim"
+      duracao="40 min"
+      qtd-min-participantes="3" qtd-max-participantes="10"
+      modalidade="presencial ou digital"
+      dimensao-sensorial="Pressão de revelar vulnerabilidade em grupo; Medo de ser identificado mesmo com anonimato declarado; Resultados muito baixos que geram tensão no grupo"/>
+  </asset-entry>
+
+</catalog>
