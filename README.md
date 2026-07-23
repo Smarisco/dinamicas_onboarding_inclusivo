@@ -90,11 +90,11 @@ Estrutura mínima de um `rasset.xml` conforme o RAS-TEA Profile:
 
 Cada dinâmica é classificada segundo três eixos ortogonais que permitem filtragem precisa:
 
-| Eixo (Context ID) | O que classifica | Exemplo |
+| Eixo  | O que classifica | Exemplo |
 |-------------------|-----------------|---------|
-| `ctx-habilidades` | Hard/soft skills desenvolvidas | Comunicação assertiva, controle de versão |
-| `ctx-sensorial` | Dimensões de neurodiversidade endereçadas | Sensibilidade auditiva, previsibilidade |
-| `ctx-sprint` | Momento da sprint: `inicio`, `meio` ou `fim` | Retrospectiva → fim |
+| `Eixo de Habilidades` | Hard/soft skills desenvolvidas | Comunicação assertiva, controle de versão |
+| `Eixo de Perfil Sensorial` | Dimensões de neurodiversidade endereçadas | Sensibilidade auditiva, previsibilidade |
+| `Eixo de Contexto Ágil` | Momento da sprint: `inicio`, `meio` ou `fim` | Retrospectiva → fim |
 
 Um quarto eixo operacional (`ctx-operacional`) registra duração, participantes, modalidade e público-alvo.
 
@@ -235,7 +235,7 @@ A versão navegável deste repositório está publicada no GitBook:
 Este repositório é o artefato de suporte ao artigo:
 
 > **Repositório de Dinâmicas Estruturadas como Ativo Reutilizável para o Ensino e Integração de Engenheiros de Software com TEA**  
-> Submetido ao SBES 2025.
+> Submetido ao SBES 2026.
 
 Protocolos utilizados:
 - Object Management Group. *Reusable Asset Specification, Version 2.2*. OMG, 2005.
@@ -246,5 +246,7 @@ Protocolos utilizados:
 
 ## Disponibilidade
 
-Os artefatos completos (manifestos `rasset.xml` e guias de customização) estão disponíveis neste repositório.  
-Os dados serão tornados públicos com identificação completa após a aceitação do artigo.
+## Disponibilidade
+
+Os artefatos completos (manifestos rasset.xml e guias de customização) estão
+disponíveis publicamente neste repositório, com identificação completa dos autores.
