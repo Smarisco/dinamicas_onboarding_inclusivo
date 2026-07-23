@@ -41,7 +41,7 @@
       </xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <!-- Eixo de Habilidades: maps hard-skill / soft-skill descriptors -->
+      <!-- Eixo de Habilidades: maps habilidades-tecnicas / habilidades-nao-tecnicas descriptors -->
       <xs:enumeration value="ctx-habilidades"/>
       <!-- Eixo de Perfil Sensorial: maps sensoryTriggers from OAP-1.0 -->
       <xs:enumeration value="ctx-sensorial"/>

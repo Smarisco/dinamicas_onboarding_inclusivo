@@ -1,11 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <asset
   xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
                       ../../profile/ras-tea-profile.xsd"
   name="Peço, Logo Recebo (Ask and Receive)"
-  id="DIN-MAND-001">
+  id="DIN-MAND-001"
+  version="1.0"
+  date="2026-07-23"
+  state="published"
+  access-rights="public"
+  referencia-bib="Ju, A. et al. (2021). A Case Study of Onboarding in Software Teams. ICSE 2021 — Tabela III: E2, E3.">
 
   <profile
     name="RAS-TEA Onboarding Profile"
@@ -33,8 +38,8 @@
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
     <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
-    <descriptor name="hard-skill" context-id="ctx-habilidades">—</descriptor>
-    <descriptor name="soft-skill" context-id="ctx-habilidades">Autoadvocacia; Comunicação Assertiva; Autorrevelação Profissional</descriptor>
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Autoadvocacia; Comunicação Assertiva; Autorrevelação Profissional</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de formular resposta verbal em tempo real; Feedback público sobre qualidade da comunicação; Incerteza sobre o que dizer sem script</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
     <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
@@ -46,63 +51,57 @@
 
   <solution>
     <artifact
-      id="art-cartao"
-      name="Cartão do Facilitador"
-      type="cartao-facilitador"
-      reference="solution/cartao-facilitador.md">
+      artifact-id="art-cartao"
+      artifact-name="Cartão do Facilitador"
+      artifact-type="cartao-facilitador"
+      artifact-reference="solution/cartao-facilitador.md">
       <artifact-context context-id="ctx-sprint"/>
-      <variability-point id="vp-var1" name="VAR1 — Cenários Específicos da Empresa"
+      <artifact-variability-point id="vp-var1" name="VAR1 — Cenários Específicos da Empresa"
                          context-id="ctx-sprint">
         <description>Cenários específicos da empresa — substituir cartões genéricos por situações reais do time</description>
-      </variability-point>
-      <variability-point id="vp-var2" name="VAR2 — Prática em Trios"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var2" name="VAR2 — Prática em Trios"
                          context-id="ctx-sprint">
         <description>Prática em trios — adicionar papel de observador</description>
-      </variability-point>
-      <variability-point id="vp-var3" name="VAR3 — Versão Escrita Total"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var3" name="VAR3 — Versão Escrita Total"
                          context-id="ctx-sensorial">
         <description>Versão escrita total — toda prática via post-its sem fala oral</description>
-      </variability-point>
+      </artifact-variability-point>
     </artifact>
     <artifact
-      id="art-debriefing"
-      name="Modelo de Debriefing"
-      type="modelo-debriefing"
-      reference="solution/modelo-debriefing.md"/>
+      artifact-id="art-debriefing"
+      artifact-name="Modelo de Debriefing"
+      artifact-type="modelo-debriefing"
+      artifact-reference="solution/modelo-debriefing.md"/>
     <artifact
-      id="art-checklist"
-      name="Checklist de Materiais"
-      type="checklist"
-      reference="solution/checklist.md"/>
+      artifact-id="art-checklist"
+      artifact-name="Checklist de Materiais"
+      artifact-type="checklist"
+      artifact-reference="solution/checklist.md"/>
     <artifact
-      id="art-custom"
-      name="Guia de Personalização"
-      type="guia-de-personalizacao"
-      reference="solution/guia-de-personalizacao.md"/>
+      artifact-id="art-custom"
+      artifact-name="Guia de Personalização"
+      artifact-type="guia-de-personalizacao"
+      artifact-reference="solution/guia-de-personalizacao.md"/>
   </solution>
 
   <usage>
-    <asset-activity>
-      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
-        <description>Distribuir Fichas de Recurso com scripts literais de frases assertivas antes de qualquer prática oral. Apresentar conceito de autoadvocacia com contraste passivo vs. assertivo. Leitura coletiva de 1 cartão de cenário como exemplo.</description>
-      </activity>
-      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
-        <description>Prática em duplas — Rodada 1 (10 min): participantes praticam com cartão atribuído. Feedback coletivo (5 min): o que tornou o pedido claro ou ambíguo. Rodada 2 (10 min): novo cenário incorporando feedback da rodada 1.</description>
-      </activity>
-      <activity id="act-scaffolding-03" task="Debriefing-final">
-        <description>Pergunta-chave: "Em quais situações reais do trabalho você precisaria usar o que praticou hoje?" Lição: Pedir ajuda clara e diretamente é uma habilidade profissional — não uma fraqueza.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-sensorial-01" task="Atencao-sensorial">
-        <description>Disponibilizar Fichas de Recurso com scripts antes de qualquer prática oral. Permitir ensaio escrito completo antes de verbalizar. Não exigir contato visual durante a prática. Organizar duplas com distância física suficiente para não sobrepor vozes.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
-        <description>Interromper se participante demonstrar ansiedade social elevada. Oferecer opção de prática escrita completa (post-its) para participantes com ansiedade social alta. Prática individual com facilitador disponível antes de ir para dupla.</description>
-      </activity>
-    </asset-activity>
+    <activity id="act-scaffolding-01" task="Preparacao-do-ambiente" asset-activity="Scaffolding">
+      <description>Distribuir Fichas de Recurso com scripts literais de frases assertivas antes de qualquer prática oral. Apresentar conceito de autoadvocacia com contraste passivo vs. assertivo. Leitura coletiva de 1 cartão de cenário como exemplo.</description>
+    </activity>
+    <activity id="act-scaffolding-02" task="Execucao-da-dinamica" asset-activity="Scaffolding">
+      <description>Prática em duplas — Rodada 1 (10 min): participantes praticam com cartão atribuído. Feedback coletivo (5 min): o que tornou o pedido claro ou ambíguo. Rodada 2 (10 min): novo cenário incorporando feedback da rodada 1.</description>
+    </activity>
+    <activity id="act-scaffolding-03" task="Debriefing-final" asset-activity="Scaffolding">
+      <description>Pergunta-chave: "Em quais situações reais do trabalho você precisaria usar o que praticou hoje?" Lição: Pedir ajuda clara e diretamente é uma habilidade profissional — não uma fraqueza.</description>
+    </activity>
+    <activity id="act-sensorial-01" task="Atencao-sensorial" asset-activity="Atencao-sensorial">
+      <description>Disponibilizar Fichas de Recurso com scripts antes de qualquer prática oral. Permitir ensaio escrito completo antes de verbalizar. Não exigir contato visual durante a prática. Organizar duplas com distância física suficiente para não sobrepor vozes.</description>
+    </activity>
+    <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao" asset-activity="Condicoes-interrupcao">
+      <description>Interromper se participante demonstrar ansiedade social elevada. Oferecer opção de prática escrita completa (post-its) para participantes com ansiedade social alta. Prática individual com facilitador disponível antes de ir para dupla.</description>
+    </activity>
   </usage>
 
   <related-asset

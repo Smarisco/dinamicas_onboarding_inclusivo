@@ -1,11 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <asset
   xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
                       ../../profile/ras-tea-profile.xsd"
   name="CRSG — Code Review Simulation Game"
-  id="DIN-REV-001">
+  id="DIN-REV-001"
+  version="1.0"
+  date="2026-07-23"
+  state="published"
+  access-rights="public"
+  referencia-bib="Ju, A. et al. (2021). A Case Study of Onboarding in Software Teams. ICSE 2021 — Tabela III: E1, E2.">
 
   <profile
     name="RAS-TEA Onboarding Profile"
@@ -33,8 +38,8 @@
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
     <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
-    <descriptor name="hard-skill" context-id="ctx-habilidades">Revisão de Código; Detecção de Defeitos; Refatoração</descriptor>
-    <descriptor name="soft-skill" context-id="ctx-habilidades">Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe</descriptor>
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Revisão de Código; Detecção de Defeitos; Refatoração</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
     <descriptor name="duracao"       context-id="ctx-operacional">55 min</descriptor>
@@ -46,63 +51,57 @@
 
   <solution>
     <artifact
-      id="art-cartao"
-      name="Cartão do Facilitador"
-      type="cartao-facilitador"
-      reference="solution/cartao-facilitador.md">
+      artifact-id="art-cartao"
+      artifact-name="Cartão do Facilitador"
+      artifact-type="cartao-facilitador"
+      artifact-reference="solution/cartao-facilitador.md">
       <artifact-context context-id="ctx-sprint"/>
-      <variability-point id="vp-var1" name="VAR1 — Múltiplas Linguagens"
+      <artifact-variability-point id="vp-var1" name="VAR1 — Múltiplas Linguagens"
                          context-id="ctx-sprint">
         <description>Múltiplas linguagens — Python, JS, Java em código separado</description>
-      </variability-point>
-      <variability-point id="vp-var2" name="VAR2 — Foco em Padrões de Design"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var2" name="VAR2 — Foco em Padrões de Design"
                          context-id="ctx-sprint">
         <description>Foco em padrões de design — violações de SOLID, DRY, KISS</description>
-      </variability-point>
-      <variability-point id="vp-var3" name="VAR3 — PR Real Anonimizado"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var3" name="VAR3 — PR Real Anonimizado"
                          context-id="ctx-sprint">
         <description>PR real do próprio time anonimizado — para times avançados</description>
-      </variability-point>
+      </artifact-variability-point>
     </artifact>
     <artifact
-      id="art-debriefing"
-      name="Modelo de Debriefing"
-      type="modelo-debriefing"
-      reference="solution/modelo-debriefing.md"/>
+      artifact-id="art-debriefing"
+      artifact-name="Modelo de Debriefing"
+      artifact-type="modelo-debriefing"
+      artifact-reference="solution/modelo-debriefing.md"/>
     <artifact
-      id="art-checklist"
-      name="Checklist de Materiais"
-      type="checklist"
-      reference="solution/checklist.md"/>
+      artifact-id="art-checklist"
+      artifact-name="Checklist de Materiais"
+      artifact-type="checklist"
+      artifact-reference="solution/checklist.md"/>
     <artifact
-      id="art-custom"
-      name="Guia de Personalização"
-      type="guia-de-personalizacao"
-      reference="solution/guia-de-personalizacao.md"/>
+      artifact-id="art-custom"
+      artifact-name="Guia de Personalização"
+      artifact-type="guia-de-personalizacao"
+      artifact-reference="solution/guia-de-personalizacao.md"/>
   </solution>
 
   <usage>
-    <asset-activity>
-      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
-        <description>Distribuir código-fonte (impresso ou digital) e checklists de revisão. Explicar objetivo e tipos de defeito. Mostrar exemplo de comentário construtivo vs. destrutivo. Anunciar estrutura completa: ler → identificar → categorizar → comentar → comparar.</description>
-      </activity>
-      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
-        <description>Revisão individual/dupla (20 min): usar checklist para identificar defeitos (Bug | Code Smell | Segurança | Performance | Legibilidade). Escrever comentário para cada defeito encontrado. Revisão coletiva (15 min): projetar código; percorrer linha a linha; comparar comentários. Prática de comentário (5 min): reformular 1 comentário destrutivo em construtivo.</description>
-      </activity>
-      <activity id="act-scaffolding-03" task="Debriefing-final">
-        <description>Pergunta-chave: "Quais defeitos ninguém encontrou? O que isso nos diz sobre nossos pontos cegos?" Lição: Code review é uma skill — checklists e prática aumentam cobertura.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-sensorial-01" task="Atencao-sensorial">
-        <description>Fornecer código com syntax highlighting (não plain text). Projetar código com fonte ≥ 14pt para facilitar leitura coletiva. Checklists com categorias explícitas eliminam categorização espontânea. Gabarito do facilitador disponível ao final para comparação objetiva.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
-        <description>Interromper se participante demonstrar ansiedade ao receber feedback público. Revisão individual antes da coletiva garante preparo sem exposição imediata. Papel de registrador disponível na revisão coletiva.</description>
-      </activity>
-    </asset-activity>
+    <activity id="act-scaffolding-01" task="Preparacao-do-ambiente" asset-activity="Scaffolding">
+      <description>Distribuir código-fonte (impresso ou digital) e checklists de revisão. Explicar objetivo e tipos de defeito. Mostrar exemplo de comentário construtivo vs. destrutivo. Anunciar estrutura completa: ler → identificar → categorizar → comentar → comparar.</description>
+    </activity>
+    <activity id="act-scaffolding-02" task="Execucao-da-dinamica" asset-activity="Scaffolding">
+      <description>Revisão individual/dupla (20 min): usar checklist para identificar defeitos (Bug | Code Smell | Segurança | Performance | Legibilidade). Escrever comentário para cada defeito encontrado. Revisão coletiva (15 min): projetar código; percorrer linha a linha; comparar comentários. Prática de comentário (5 min): reformular 1 comentário destrutivo em construtivo.</description>
+    </activity>
+    <activity id="act-scaffolding-03" task="Debriefing-final" asset-activity="Scaffolding">
+      <description>Pergunta-chave: "Quais defeitos ninguém encontrou? O que isso nos diz sobre nossos pontos cegos?" Lição: Code review é uma skill — checklists e prática aumentam cobertura.</description>
+    </activity>
+    <activity id="act-sensorial-01" task="Atencao-sensorial" asset-activity="Atencao-sensorial">
+      <description>Fornecer código com syntax highlighting (não plain text). Projetar código com fonte ≥ 14pt para facilitar leitura coletiva. Checklists com categorias explícitas eliminam categorização espontânea. Gabarito do facilitador disponível ao final para comparação objetiva.</description>
+    </activity>
+    <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao" asset-activity="Condicoes-interrupcao">
+      <description>Interromper se participante demonstrar ansiedade ao receber feedback público. Revisão individual antes da coletiva garante preparo sem exposição imediata. Papel de registrador disponível na revisão coletiva.</description>
+    </activity>
   </usage>
 
   <related-asset

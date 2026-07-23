@@ -53,7 +53,7 @@ Every asset conforming to this profile **must** include a `<classification>` sec
 
 | Context ID | Name | Required Descriptor Names |
 |------------|------|--------------------------|
-| `ctx-habilidades` | Eixo de Habilidades | `hard-skill`, `soft-skill` |
+| `ctx-habilidades` | Eixo de Habilidades | `habilidades-tecnicas`, `habilidades-nao-tecnicas` |
 | `ctx-sensorial` | Eixo de Perfil Sensorial | `dimensao-sensorial` |
 | `ctx-sprint` | Eixo de Contexto Ágil | `momento-sprint` |
 

@@ -1,11 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <asset
   xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
                       ../../profile/ras-tea-profile.xsd"
   name="Termômetro Psicológico"
-  id="DIN-PSAF-001">
+  id="DIN-PSAF-001"
+  version="1.0"
+  date="2026-07-23"
+  state="published"
+  access-rights="public"
+  referencia-bib="Edmondson, A. (1999). Psychological Safety and Learning Behavior in Work Teams. Administrative Science Quarterly, 44(2); Ju, A. et al. (2021). A Case Study of Onboarding in Software Teams. ICSE 2021 — Tabela III: E2, E3.">
 
   <profile
     name="RAS-TEA Onboarding Profile"
@@ -33,8 +38,8 @@
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
     <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
-    <descriptor name="hard-skill" context-id="ctx-habilidades">—</descriptor>
-    <descriptor name="soft-skill" context-id="ctx-habilidades">Segurança Psicológica; Vulnerabilidade Profissional; Autorregulação</descriptor>
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Segurança Psicológica; Vulnerabilidade Profissional; Autorregulação</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de revelar vulnerabilidade em grupo; Medo de ser identificado mesmo com anonimato declarado; Resultados muito baixos que geram tensão no grupo</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
     <descriptor name="duracao"       context-id="ctx-operacional">40 min</descriptor>
@@ -46,63 +51,57 @@
 
   <solution>
     <artifact
-      id="art-cartao"
-      name="Cartão do Facilitador"
-      type="cartao-facilitador"
-      reference="solution/cartao-facilitador.md">
+      artifact-id="art-cartao"
+      artifact-name="Cartão do Facilitador"
+      artifact-type="cartao-facilitador"
+      artifact-reference="solution/cartao-facilitador.md">
       <artifact-context context-id="ctx-sprint"/>
-      <variability-point id="vp-var1" name="VAR1 — Termômetro de Humor"
+      <artifact-variability-point id="vp-var1" name="VAR1 — Termômetro de Humor"
                          context-id="ctx-sprint">
         <description>Termômetro de humor — mede estado emocional atual; uso em check-ins diários</description>
-      </variability-point>
-      <variability-point id="vp-var2" name="VAR2 — Termômetro de Energia"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var2" name="VAR2 — Termômetro de Energia"
                          context-id="ctx-sprint">
         <description>Termômetro de energia — mede carga percebida; identifica esgotamento em sprints longos</description>
-      </variability-point>
-      <variability-point id="vp-var3" name="VAR3 — Multi-Dimensão"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var3" name="VAR3 — Multi-Dimensão"
                          context-id="ctx-sprint">
         <description>Multi-dimensão — 3 termômetros: segurança para errar / pedir ajuda / discordar</description>
-      </variability-point>
+      </artifact-variability-point>
     </artifact>
     <artifact
-      id="art-debriefing"
-      name="Modelo de Debriefing"
-      type="modelo-debriefing"
-      reference="solution/modelo-debriefing.md"/>
+      artifact-id="art-debriefing"
+      artifact-name="Modelo de Debriefing"
+      artifact-type="modelo-debriefing"
+      artifact-reference="solution/modelo-debriefing.md"/>
     <artifact
-      id="art-checklist"
-      name="Checklist de Materiais"
-      type="checklist"
-      reference="solution/checklist.md"/>
+      artifact-id="art-checklist"
+      artifact-name="Checklist de Materiais"
+      artifact-type="checklist"
+      artifact-reference="solution/checklist.md"/>
     <artifact
-      id="art-custom"
-      name="Guia de Personalização"
-      type="guia-de-personalizacao"
-      reference="solution/guia-de-personalizacao.md"/>
+      artifact-id="art-custom"
+      artifact-name="Guia de Personalização"
+      artifact-type="guia-de-personalizacao"
+      artifact-reference="solution/guia-de-personalizacao.md"/>
   </solution>
 
   <usage>
-    <asset-activity>
-      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
-        <description>Explicar segurança psicológica (Edmondson 1999) com exemplos concretos. Mostrar e explicar escala 1-5 com descrição literal de cada nível. Garantir e reforçar anonimato. Distribuir fichas anônimas.</description>
-      </activity>
-      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
-        <description>Marcação anônima (5 min): cada participante escreve apenas o número. Consolidação visual (5 min): facilitador marca pontos no termômetro sem identificar. Discussão coletiva (15 min): facilitar discussão sobre barreiras; participantes contribuem verbalmente ou por post-it.</description>
-      </activity>
-      <activity id="act-scaffolding-03" task="Debriefing-final">
-        <description>Encerramento (5 min). Pergunta-chave: "O que a equipe se compromete a fazer diferente para aumentar a segurança psicológica?" Lição: Segurança psicológica é construída por comportamentos consistentes — não por declarações.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-sensorial-01" task="Atencao-sensorial">
-        <description>Fichas anônimas são o mecanismo central — ninguém precisa verbalizar seu número. Cada nível da escala tem descrição escrita explícita. Post-its disponíveis para contribuições escritas durante a discussão. Facilitador lê post-its em voz alta sem identificar autores.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
-        <description>Interromper se atmosfera ficar tensa após resultados baixos. Facilitador não revela números individuais em nenhuma circunstância. Online: votação anônima via Mentimeter com histograma em tempo real como alternativa.</description>
-      </activity>
-    </asset-activity>
+    <activity id="act-scaffolding-01" task="Preparacao-do-ambiente" asset-activity="Scaffolding">
+      <description>Explicar segurança psicológica (Edmondson 1999) com exemplos concretos. Mostrar e explicar escala 1-5 com descrição literal de cada nível. Garantir e reforçar anonimato. Distribuir fichas anônimas.</description>
+    </activity>
+    <activity id="act-scaffolding-02" task="Execucao-da-dinamica" asset-activity="Scaffolding">
+      <description>Marcação anônima (5 min): cada participante escreve apenas o número. Consolidação visual (5 min): facilitador marca pontos no termômetro sem identificar. Discussão coletiva (15 min): facilitar discussão sobre barreiras; participantes contribuem verbalmente ou por post-it.</description>
+    </activity>
+    <activity id="act-scaffolding-03" task="Debriefing-final" asset-activity="Scaffolding">
+      <description>Encerramento (5 min). Pergunta-chave: "O que a equipe se compromete a fazer diferente para aumentar a segurança psicológica?" Lição: Segurança psicológica é construída por comportamentos consistentes — não por declarações.</description>
+    </activity>
+    <activity id="act-sensorial-01" task="Atencao-sensorial" asset-activity="Atencao-sensorial">
+      <description>Fichas anônimas são o mecanismo central — ninguém precisa verbalizar seu número. Cada nível da escala tem descrição escrita explícita. Post-its disponíveis para contribuições escritas durante a discussão. Facilitador lê post-its em voz alta sem identificar autores.</description>
+    </activity>
+    <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao" asset-activity="Condicoes-interrupcao">
+      <description>Interromper se atmosfera ficar tensa após resultados baixos. Facilitador não revela números individuais em nenhuma circunstância. Online: votação anônima via Mentimeter com histograma em tempo real como alternativa.</description>
+    </activity>
   </usage>
 
   <related-asset

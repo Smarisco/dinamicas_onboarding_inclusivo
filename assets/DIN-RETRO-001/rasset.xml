@@ -1,11 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <asset
   xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
                       ../../profile/ras-tea-profile.xsd"
   name="Retrospectiva Guiada"
-  id="DIN-RETRO-001">
+  id="DIN-RETRO-001"
+  version="1.0"
+  date="2026-07-23"
+  state="published"
+  access-rights="public"
+  referencia-bib="Ju, A. et al. (2021). A Case Study of Onboarding in Software Teams. ICSE 2021 — Tabela III: E2, E3.">
 
   <profile
     name="RAS-TEA Onboarding Profile"
@@ -33,8 +38,8 @@
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
     <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
-    <descriptor name="hard-skill" context-id="ctx-habilidades">—</descriptor>
-    <descriptor name="soft-skill" context-id="ctx-habilidades">Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback</descriptor>
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
     <descriptor name="duracao"       context-id="ctx-operacional">50 min</descriptor>
@@ -46,63 +51,57 @@
 
   <solution>
     <artifact
-      id="art-cartao"
-      name="Cartão do Facilitador"
-      type="cartao-facilitador"
-      reference="solution/cartao-facilitador.md">
+      artifact-id="art-cartao"
+      artifact-name="Cartão do Facilitador"
+      artifact-type="cartao-facilitador"
+      artifact-reference="solution/cartao-facilitador.md">
       <artifact-context context-id="ctx-sprint"/>
-      <variability-point id="vp-var1" name="VAR1 — Estrelas e Desejos"
+      <artifact-variability-point id="vp-var1" name="VAR1 — Estrelas e Desejos"
                          context-id="ctx-sprint">
         <description>Estrelas e Desejos — perguntas: 'O que brilhou?' e 'O que desejo para o próximo sprint?'</description>
-      </variability-point>
-      <variability-point id="vp-var2" name="VAR2 — Barco e Âncoras"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var2" name="VAR2 — Barco e Âncoras"
                          context-id="ctx-sprint">
         <description>Barco e Âncoras — metáfora visual: vento (impulso) vs. âncora (bloqueio)</description>
-      </variability-point>
-      <variability-point id="vp-var3" name="VAR3 — Online"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var3" name="VAR3 — Online"
                          context-id="ctx-sprint">
         <description>Online (Miro/Metroretro) — ferramentas digitais com post-its virtuais para times remotos</description>
-      </variability-point>
+      </artifact-variability-point>
     </artifact>
     <artifact
-      id="art-debriefing"
-      name="Modelo de Debriefing"
-      type="modelo-debriefing"
-      reference="solution/modelo-debriefing.md"/>
+      artifact-id="art-debriefing"
+      artifact-name="Modelo de Debriefing"
+      artifact-type="modelo-debriefing"
+      artifact-reference="solution/modelo-debriefing.md"/>
     <artifact
-      id="art-checklist"
-      name="Checklist de Materiais"
-      type="checklist"
-      reference="solution/checklist.md"/>
+      artifact-id="art-checklist"
+      artifact-name="Checklist de Materiais"
+      artifact-type="checklist"
+      artifact-reference="solution/checklist.md"/>
     <artifact
-      id="art-custom"
-      name="Guia de Personalização"
-      type="guia-de-personalizacao"
-      reference="solution/guia-de-personalizacao.md"/>
+      artifact-id="art-custom"
+      artifact-name="Guia de Personalização"
+      artifact-type="guia-de-personalizacao"
+      artifact-reference="solution/guia-de-personalizacao.md"/>
   </solution>
 
   <usage>
-    <asset-activity>
-      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
-        <description>Preparar quadro com 3 colunas: 'O que foi bem?', 'O que pode melhorar?', 'Ações'. Escrever estrutura das 5 fases no quadro. Configurar timer visível para cada fase.</description>
-      </activity>
-      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
-        <description>Set the Stage (5 min): check-in com palavra/emoji. Gather Data (10 min): silêncio — todos escrevem post-its e colam nas colunas. Generate Insights (15 min): agrupar post-its; nomear clusters; votar. Decide What to Do (15 min): top 1-3 clusters → ação concreta + dono + prazo.</description>
-      </activity>
-      <activity id="act-scaffolding-03" task="Debriefing-final">
-        <description>Close the Retrospective (5 min). Pergunta-chave: "Esta retro foi útil? Como melhorar a próxima?" Lição: Melhoria contínua é processo — cada retro deve melhorar a próxima.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-sensorial-01" task="Atencao-sensorial">
-        <description>Silêncio obrigatório durante a fase Gather Data. Timer visível exibido durante toda a fase de escrita. Estrutura das 5 fases anunciada antes de começar. Facilitador anuncia início e fim de cada fase com frase padronizada.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
-        <description>Interromper se participante demonstrar resistência a expor percepções negativas. Oferecer opção de enviar post-its anonimamente ao facilitador antes da sessão. Check-in pode ser feito com emoji em vez de palavra falada.</description>
-      </activity>
-    </asset-activity>
+    <activity id="act-scaffolding-01" task="Preparacao-do-ambiente" asset-activity="Scaffolding">
+      <description>Preparar quadro com 3 colunas: 'O que foi bem?', 'O que pode melhorar?', 'Ações'. Escrever estrutura das 5 fases no quadro. Configurar timer visível para cada fase.</description>
+    </activity>
+    <activity id="act-scaffolding-02" task="Execucao-da-dinamica" asset-activity="Scaffolding">
+      <description>Set the Stage (5 min): check-in com palavra/emoji. Gather Data (10 min): silêncio — todos escrevem post-its e colam nas colunas. Generate Insights (15 min): agrupar post-its; nomear clusters; votar. Decide What to Do (15 min): top 1-3 clusters → ação concreta + dono + prazo.</description>
+    </activity>
+    <activity id="act-scaffolding-03" task="Debriefing-final" asset-activity="Scaffolding">
+      <description>Close the Retrospective (5 min). Pergunta-chave: "Esta retro foi útil? Como melhorar a próxima?" Lição: Melhoria contínua é processo — cada retro deve melhorar a próxima.</description>
+    </activity>
+    <activity id="act-sensorial-01" task="Atencao-sensorial" asset-activity="Atencao-sensorial">
+      <description>Silêncio obrigatório durante a fase Gather Data. Timer visível exibido durante toda a fase de escrita. Estrutura das 5 fases anunciada antes de começar. Facilitador anuncia início e fim de cada fase com frase padronizada.</description>
+    </activity>
+    <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao" asset-activity="Condicoes-interrupcao">
+      <description>Interromper se participante demonstrar resistência a expor percepções negativas. Oferecer opção de enviar post-its anonimamente ao facilitador antes da sessão. Check-in pode ser feito com emoji em vez de palavra falada.</description>
+    </activity>
   </usage>
 
   <related-asset

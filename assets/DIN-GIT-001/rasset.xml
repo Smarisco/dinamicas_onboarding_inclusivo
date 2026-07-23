@@ -1,11 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <asset
   xmlns="http://www.rational.com/ras/rasdefaultprofile2_0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rational.com/ras/rasdefaultprofile2_0
                       ../../profile/ras-tea-profile.xsd"
   name="Git em Conflito (Git in Conflict)"
-  id="DIN-GIT-001">
+  id="DIN-GIT-001"
+  version="1.0"
+  date="2026-07-23"
+  state="published"
+  access-rights="public"
+  referencia-bib="Ju, A. et al. (2021). A Case Study of Onboarding in Software Teams. ICSE 2021 — Tabela III: E1, E2.">
 
   <profile
     name="RAS-TEA Onboarding Profile"
@@ -33,8 +38,8 @@
     <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
     <context id="ctx-operacional"  name="Metadados Operacionais"/>
 
-    <descriptor name="hard-skill" context-id="ctx-habilidades">Git (branches, merge, rebase); Resolução de Conflitos de Versionamento; Code Review</descriptor>
-    <descriptor name="soft-skill" context-id="ctx-habilidades">Comunicação Técnica; Negociação de Código; Trabalho em Par</descriptor>
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Git (branches, merge, rebase); Resolução de Conflitos de Versionamento; Code Review</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Comunicação Técnica; Negociação de Código; Trabalho em Par</descriptor>
     <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Medo de 'quebrar' o repositório compartilhado; Mensagens de erro Git percebidas como falha pessoal; Pressão de tempo na resolução</descriptor>
     <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
     <descriptor name="duracao"       context-id="ctx-operacional">60 min</descriptor>
@@ -46,63 +51,57 @@
 
   <solution>
     <artifact
-      id="art-cartao"
-      name="Cartão do Facilitador"
-      type="cartao-facilitador"
-      reference="solution/cartao-facilitador.md">
+      artifact-id="art-cartao"
+      artifact-name="Cartão do Facilitador"
+      artifact-type="cartao-facilitador"
+      artifact-reference="solution/cartao-facilitador.md">
       <artifact-context context-id="ctx-sprint"/>
-      <variability-point id="vp-var1" name="VAR1 — Conflito em Arquivo Binário"
+      <artifact-variability-point id="vp-var1" name="VAR1 — Conflito em Arquivo Binário"
                          context-id="ctx-sprint">
         <description>Conflito em arquivo binário — para perfis avançados</description>
-      </variability-point>
-      <variability-point id="vp-var2" name="VAR2 — Múltiplas Linguagens"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var2" name="VAR2 — Múltiplas Linguagens"
                          context-id="ctx-sprint">
         <description>Múltiplas linguagens — Python, JS, Java em conflito simultâneo</description>
-      </variability-point>
-      <variability-point id="vp-var3" name="VAR3 — Ambiente Offline"
+      </artifact-variability-point>
+      <artifact-variability-point id="vp-var3" name="VAR3 — Ambiente Offline"
                          context-id="ctx-sprint">
         <description>Ambiente offline — repositório local bare sem acesso à internet</description>
-      </variability-point>
+      </artifact-variability-point>
     </artifact>
     <artifact
-      id="art-debriefing"
-      name="Modelo de Debriefing"
-      type="modelo-debriefing"
-      reference="solution/modelo-debriefing.md"/>
+      artifact-id="art-debriefing"
+      artifact-name="Modelo de Debriefing"
+      artifact-type="modelo-debriefing"
+      artifact-reference="solution/modelo-debriefing.md"/>
     <artifact
-      id="art-checklist"
-      name="Checklist de Materiais"
-      type="checklist"
-      reference="solution/checklist.md"/>
+      artifact-id="art-checklist"
+      artifact-name="Checklist de Materiais"
+      artifact-type="checklist"
+      artifact-reference="solution/checklist.md"/>
     <artifact
-      id="art-custom"
-      name="Guia de Personalização"
-      type="guia-de-personalizacao"
-      reference="solution/guia-de-personalizacao.md"/>
+      artifact-id="art-custom"
+      artifact-name="Guia de Personalização"
+      artifact-type="guia-de-personalizacao"
+      artifact-reference="solution/guia-de-personalizacao.md"/>
   </solution>
 
   <usage>
-    <asset-activity>
-      <activity id="act-scaffolding-01" task="Preparacao-do-ambiente">
-        <description>Clonar repositório de treinamento com conflitos pré-existentes. Configurar user.name e user.email. Apresentar cenário narrativo do conflito. Fornecer checklist de 5 passos: Identificar → Abrir → Escolher/combinar → Remover marcadores → Commitar.</description>
-      </activity>
-      <activity id="act-scaffolding-02" task="Execucao-da-dinamica">
-        <description>Conflito 1 — Merge Simples (15 min): duplas executam git merge; resolvem conflito de texto simples; garantem commit limpo. Revisão coletiva (5 min): discutir estratégias. Conflito 2 — Lógica Conflitante (15 min): ambas versões válidas, precisam ser combinadas. Conflito 3 — Rebase (10 min, opcional para perfis avançados).</description>
-      </activity>
-      <activity id="act-scaffolding-03" task="Debriefing-final">
-        <description>Pergunta-chave: "Como comunicar melhor ao fazer um PR para evitar conflitos futuros?" Lição: Conflito Git = divergência de intenção — resolver requer comunicação, não apenas comandos.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-sensorial-01" task="Atencao-sensorial">
-        <description>Usar VS Code 3-way merge view ou GitKraken para visualização do conflito. Projetar diff side-by-side no quadro antes da resolução individual. Apresentar narrativa completa antes de começar: quem fez o quê em qual branch.</description>
-      </activity>
-    </asset-activity>
-    <asset-activity>
-      <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao">
-        <description>Interromper se participante demonstrar ansiedade elevada ao ver mensagens de erro. Reforçar que erros são reversíveis e o repositório de treinamento pode ser recriado. Prática em dupla recomendada para reduzir pressão de resolução solo.</description>
-      </activity>
-    </asset-activity>
+    <activity id="act-scaffolding-01" task="Preparacao-do-ambiente" asset-activity="Scaffolding">
+      <description>Clonar repositório de treinamento com conflitos pré-existentes. Configurar user.name e user.email. Apresentar cenário narrativo do conflito. Fornecer checklist de 5 passos: Identificar → Abrir → Escolher/combinar → Remover marcadores → Commitar.</description>
+    </activity>
+    <activity id="act-scaffolding-02" task="Execucao-da-dinamica" asset-activity="Scaffolding">
+      <description>Conflito 1 — Merge Simples (15 min): duplas executam git merge; resolvem conflito de texto simples; garantem commit limpo. Revisão coletiva (5 min): discutir estratégias. Conflito 2 — Lógica Conflitante (15 min): ambas versões válidas, precisam ser combinadas. Conflito 3 — Rebase (10 min, opcional para perfis avançados).</description>
+    </activity>
+    <activity id="act-scaffolding-03" task="Debriefing-final" asset-activity="Scaffolding">
+      <description>Pergunta-chave: "Como comunicar melhor ao fazer um PR para evitar conflitos futuros?" Lição: Conflito Git = divergência de intenção — resolver requer comunicação, não apenas comandos.</description>
+    </activity>
+    <activity id="act-sensorial-01" task="Atencao-sensorial" asset-activity="Atencao-sensorial">
+      <description>Usar VS Code 3-way merge view ou GitKraken para visualização do conflito. Projetar diff side-by-side no quadro antes da resolução individual. Apresentar narrativa completa antes de começar: quem fez o quê em qual branch.</description>
+    </activity>
+    <activity id="act-interrupcao-01" task="Condicoes-de-interrupcao" asset-activity="Condicoes-interrupcao">
+      <description>Interromper se participante demonstrar ansiedade elevada ao ver mensagens de erro. Reforçar que erros são reversíveis e o repositório de treinamento pode ser recriado. Prática em dupla recomendada para reduzir pressão de resolução solo.</description>
+    </activity>
   </usage>
 
   <related-asset
