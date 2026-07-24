@@ -142,7 +142,7 @@ Antes de abrir um Pull Request, certifique-se de que:
 
 ---
 
-## Requirements
+## Pré Requisito
 
 Para inspecionar e validar este artefato não é necessário instalar nenhuma linguagem de programação ou runtime. São suficientes:
 
@@ -155,7 +155,7 @@ Para inspecionar e validar este artefato não é necessário instalar nenhuma li
 
 ---
 
-## Installation
+## Instalação
 
 Não há instalação de dependências. Para verificar que o artefato está íntegro, execute o comando abaixo **a partir da raiz do repositório**.
 

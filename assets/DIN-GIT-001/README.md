@@ -52,6 +52,6 @@ Prática orientada em que duplas ou trios resolvem conflitos de merge pré-fabri
 
 ## Referências
 
-- Chang, K. & Dow, K. (2024). *Git conflict resolution study*.
+- Laginja, I. et al. (2022). *Connecting the astronomical testbed community — the CAOTIC project: Optimized teaching methods for software version control concepts*. Proc. SPIE, arXiv:2208.02263.
 - Ju, A. et al. (2021). *A Case Study of Onboarding in Software Teams*. ICSE 2021.
 - Hause, M. et al. (2025). *RAS 3.0*. INCOSE INSIGHT, Vol.28/5.
