@@ -10,7 +10,7 @@ Este repositório organiza dinâmicas de onboarding modeladas segundo o padrão 
 
 A abordagem transforma práticas de integração isoladas em ativos **descobríveis, versionados e reproduzíveis** por qualquer equipe, com ou sem experiência prévia em neurodiversidade.
 
-> **Artigo:** Repositório de Dinâmicas Reutilizáveis: Promovendo o Onboarding Inclusivo para Engenheiros de Software com TEA — Stela Marisco Duarte, Daniel Vitoriano Santos, Maria Istela Cagnin. SBES 2026 (CBSoft 2026). [PREENCHER: link do artigo aceito]
+> **Artigo:** Repositório de Dinâmicas Reutilizáveis: Promovendo o Onboarding Inclusivo para Engenheiros de Software com TEA — Stela Marisco Duarte, Daniel Vitoriano Santos, Maria Istela Cagnin. SBES 2026 (CBSoft 2026). 
 
 ---
 
@@ -98,7 +98,7 @@ Cada dinâmica é classificada segundo três eixos ortogonais que permitem filtr
 
 ---
 
-## Ativos instanciados
+## Ativos Catalogados
 
 | ID | Nome | Grupo | Momento | Modalidade |
 |----|------|-------|---------|------------|
@@ -230,10 +230,7 @@ A versão navegável deste repositório está publicada no GitBook:
 
 ## Referência
 
-Este repositório é o artefato de suporte ao artigo:
-
-> **Repositório de Dinâmicas Estruturadas como Ativo Reutilizável para o Ensino e Integração de Engenheiros de Software com TEA**  
-> Submetido ao SBES 2026.
+DUARTE, S. M. ; SANTOS, D. V. ; CAGNIN, M. I. . Repositório de Dinâmicas Reutilizáveis: Promovendo o Onboarding Inclusivo para Engenheiros de Software com TEA. In: XL Simpósio Brasileiro de Engenharia de Software (Trilha Ideias Inovadoras e Resultados Emergentes), 2026, São Paulo-SP.  Porto Alegre-RS: Sociedade Brasileira de Computação. p. 1-6.
 
 Protocolos utilizados:
 - Object Management Group. *Reusable Asset Specification, Version 2.2*. OMG, 2005.
@@ -241,8 +238,6 @@ Protocolos utilizados:
 - Ju, A. et al. (2021). *A Case Study of Onboarding in Software Teams*. ICSE 2021.
 
 ---
-
-## Disponibilidade
 
 ## Disponibilidade
 
