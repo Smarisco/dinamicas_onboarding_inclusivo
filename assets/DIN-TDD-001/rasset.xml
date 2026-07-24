@@ -32,18 +32,21 @@
 
   <description>Prática repetitiva em que o participante implementa problema simples seguindo ciclo TDD. Construtos E1.x + E2.x. Internalizar disciplina Red-Green-Refactor.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Test-Driven Development; Ciclo Red-Green-Refactor; Cobertura de Testes"
-    habilidades-nao-tecnicas="Disciplina de Processo; Paciência Iterativa"
-    dimensao-sensorial="Frustração ao ver testes falhando (percepção de falha pessoal); Pressão de seguir o ciclo rigorosamente sem 'atalhos'"
-    momento-sprint="meio"
-    duracao="60 min"
-    qtd-min-participantes="1"
-    qtd-max-participantes="4"
-    modalidade="digital"
-    publico-alvo="Desenvolvedor; QA / Tester; Engenheiro de Software em Onboarding"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Test-Driven Development; Ciclo Red-Green-Refactor; Cobertura de Testes</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Disciplina de Processo; Paciência Iterativa</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Frustração ao ver testes falhando (percepção de falha pessoal); Pressão de seguir o ciclo rigorosamente sem 'atalhos'</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao">60 min</descriptor>
+    <descriptor name="qtd-min-participantes">1</descriptor>
+    <descriptor name="qtd-max-participantes">4</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; QA / Tester; Engenheiro de Software em Onboarding</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — FizzBuzz Kata">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — FizzBuzz Kata"
+                         context-id="ctx-sprint">
         <description>FizzBuzz Kata — para iniciantes absolutos em TDD</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — String Calculator Kata">
+      <artifact-variability-point id="vp-var2" name="VAR2 — String Calculator Kata"
+                         context-id="ctx-sprint">
         <description>String Calculator Kata — nível intermediário, requisitos incrementais</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Ping-Pong TDD">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Ping-Pong TDD"
+                         context-id="ctx-sprint">
         <description>Ping-Pong TDD — prática em pair programming</description>
       </artifact-variability-point>
     </artifact>

@@ -32,18 +32,21 @@
 
   <description>Prática estruturada de comunicação assertiva com cartões de cenário e scripts literais. Construtos E3.x + E2.x. Autoadvocacia para profissionais com TEA em onboarding.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="—"
-    habilidades-nao-tecnicas="Autoadvocacia; Comunicação Assertiva; Autorrevelação Profissional"
-    dimensao-sensorial="Pressão de formular resposta verbal em tempo real; Feedback público sobre qualidade da comunicação; Incerteza sobre o que dizer sem script"
-    momento-sprint="fim"
-    duracao="40 min"
-    qtd-min-participantes="4"
-    qtd-max-participantes="12"
-    modalidade="presencial"
-    publico-alvo="Desenvolvedor em Onboarding; Qualquer membro de time com dificuldade de assertividade; Facilitador de RH"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Autoadvocacia; Comunicação Assertiva; Autorrevelação Profissional</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de formular resposta verbal em tempo real; Feedback público sobre qualidade da comunicação; Incerteza sobre o que dizer sem script</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao">40 min</descriptor>
+    <descriptor name="qtd-min-participantes">4</descriptor>
+    <descriptor name="qtd-max-participantes">12</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor em Onboarding; Qualquer membro de time com dificuldade de assertividade; Facilitador de RH</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Cenários Específicos da Empresa">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Cenários Específicos da Empresa"
+                         context-id="ctx-sprint">
         <description>Cenários específicos da empresa — substituir cartões genéricos por situações reais do time</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Prática em Trios">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Prática em Trios"
+                         context-id="ctx-sprint">
         <description>Prática em trios — adicionar papel de observador</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Versão Escrita Total">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Versão Escrita Total"
+                         context-id="ctx-sensorial">
         <description>Versão escrita total — toda prática via post-its sem fala oral</description>
       </artifact-variability-point>
     </artifact>

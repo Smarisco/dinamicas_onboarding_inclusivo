@@ -73,12 +73,9 @@ Estrutura mínima de um `rasset.xml` conforme o RAS-TEA Profile:
 <asset xmlns="http://www.rational.com/ras/rasdefaultprofile2_0" …>
   <profile name="RAS-TEA Onboarding Profile"
     id-history="F1C842AD-…::31E5BFBF-…::TEA-ONB-PROF-2026-0001" …/>
-  <classification
-    context="" descriptor=""
-    habilidades-tecnicas="…" habilidades-nao-tecnicas="…"
-    dimensao-sensorial="…" momento-sprint="inicio|meio|fim"
-    duracao="…" qtd-min-participantes="…" qtd-max-participantes="…"
-    modalidade="…" publico-alvo="…"/>
+  <classification>
+    <!-- ctx-habilidades, ctx-sensorial, ctx-sprint obrigatórios -->
+  </classification>
   <solution>
     <!-- cartao-facilitador e modelo-debriefing obrigatórios -->
   </solution>

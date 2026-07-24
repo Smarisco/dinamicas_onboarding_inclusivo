@@ -32,18 +32,21 @@
 
   <description>Simulação iterativa com bolinhas para demonstrar empiricamente a diferença entre fluxo e ocupação em times ágeis. Construtos E2.1 (Confiança) + ExperientialLearning.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Estimativa (Velocity); Pensamento Sistêmico"
-    habilidades-nao-tecnicas="Auto-organização; Segurança Psicológica; Comunicação Explícita"
-    dimensao-sensorial="Ruído de bolinhas rígidas ao cair; Sinal sonoro abrupto do cronômetro; Aglomeração em espaços pequenos"
-    momento-sprint="inicio"
-    duracao="40 min"
-    qtd-min-participantes="3"
-    qtd-max-participantes="10"
-    modalidade="presencial"
-    publico-alvo="Facilitador Scrum; Coach Ágil; Professor de Engenharia de Software; Time de Desenvolvimento"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Estimativa (Velocity); Pensamento Sistêmico</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Auto-organização; Segurança Psicológica; Comunicação Explícita</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Ruído de bolinhas rígidas ao cair; Sinal sonoro abrupto do cronômetro; Aglomeração em espaços pequenos</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
+    <descriptor name="duracao">40 min</descriptor>
+    <descriptor name="qtd-min-participantes">3</descriptor>
+    <descriptor name="qtd-max-participantes">10</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Facilitador Scrum; Coach Ágil; Professor de Engenharia de Software; Time de Desenvolvimento</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Bolinhas com Pesos Diferentes">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Bolinhas com Pesos Diferentes"
+                         context-id="ctx-sensorial">
         <description>Bolinhas com pesos diferentes — simula variabilidade de WIP</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Remota">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Remota"
+                         context-id="ctx-sprint">
         <description>Versão remota — objetos virtuais em quadro digital</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Debriefing Estendido">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Debriefing Estendido"
+                         context-id="ctx-sprint">
         <description>Com debriefing estendido — aprofundamento em métricas de fluxo</description>
       </artifact-variability-point>
     </artifact>

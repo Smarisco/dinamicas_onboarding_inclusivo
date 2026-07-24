@@ -32,18 +32,21 @@
 
   <description>Técnica de estimativa relativa com revelação simultânea de cartas. Construtos E1.x + E2.x. Gamification e Simulação para calibração de esforço e consenso técnico.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Estimativa de Esforço; Gestão de Backlog; Story Points"
-    habilidades-nao-tecnicas="Negociação; Escuta Ativa; Tomada de Decisão Coletiva"
-    dimensao-sensorial="Pressão de justificar estimativa diferente da maioria; Discussões técnicas longas sem estrutura clara"
-    momento-sprint="inicio"
-    duracao="60 min"
-    qtd-min-participantes="3"
-    qtd-max-participantes="9"
-    modalidade="presencial"
-    publico-alvo="Desenvolvedor; Scrum Master; Product Owner; Tech Lead"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Estimativa de Esforço; Gestão de Backlog; Story Points</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Negociação; Escuta Ativa; Tomada de Decisão Coletiva</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de justificar estimativa diferente da maioria; Discussões técnicas longas sem estrutura clara</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
+    <descriptor name="duracao">60 min</descriptor>
+    <descriptor name="qtd-min-participantes">3</descriptor>
+    <descriptor name="qtd-max-participantes">9</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; Scrum Master; Product Owner; Tech Lead</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Baralho T-Shirt">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Baralho T-Shirt"
+                         context-id="ctx-sprint">
         <description>Baralho T-Shirt (XS/S/M/L/XL) — para times iniciantes em estimativa</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Online">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Online"
+                         context-id="ctx-sprint">
         <description>Versão online (Miro/PlanITPoker) — para remote onboarding</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Estimativa de Tarefas Técnicas">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Estimativa de Tarefas Técnicas"
+                         context-id="ctx-sprint">
         <description>Estimativa de tarefas técnicas (não stories) — para refinamento técnico</description>
       </artifact-variability-point>
     </artifact>

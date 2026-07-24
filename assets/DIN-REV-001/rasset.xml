@@ -32,18 +32,21 @@
 
   <description>Simulação de code review com defeitos intencionais e checklists estruturados. Construtos E1.x + E2.x. Identificação sistemática de defeitos e feedback técnico construtivo.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Revisão de Código; Detecção de Defeitos; Refatoração"
-    habilidades-nao-tecnicas="Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe"
-    dimensao-sensorial="Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos"
-    momento-sprint="meio"
-    duracao="55 min"
-    qtd-min-participantes="2"
-    qtd-max-participantes="6"
-    modalidade="digital"
-    publico-alvo="Desenvolvedor; QA / Tester; Tech Lead; Engenheiro de Software em Onboarding"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Revisão de Código; Detecção de Defeitos; Refatoração</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Feedback Técnico; Comunicação Construtiva; Atenção a Detalhe</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de encontrar defeitos que outros encontraram e você não; Feedback público sobre qualidade dos comentários escritos</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao">55 min</descriptor>
+    <descriptor name="qtd-min-participantes">2</descriptor>
+    <descriptor name="qtd-max-participantes">6</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; QA / Tester; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Múltiplas Linguagens">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Múltiplas Linguagens"
+                         context-id="ctx-sprint">
         <description>Múltiplas linguagens — Python, JS, Java em código separado</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Foco em Padrões de Design">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Foco em Padrões de Design"
+                         context-id="ctx-sprint">
         <description>Foco em padrões de design — violações de SOLID, DRY, KISS</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — PR Real Anonimizado">
+      <artifact-variability-point id="vp-var3" name="VAR3 — PR Real Anonimizado"
+                         context-id="ctx-sprint">
         <description>PR real do próprio time anonimizado — para times avançados</description>
       </artifact-variability-point>
     </artifact>

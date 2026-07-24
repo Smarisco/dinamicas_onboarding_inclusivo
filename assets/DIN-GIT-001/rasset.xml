@@ -32,18 +32,21 @@
 
   <description>Prática orientada em que duplas resolvem conflitos de merge pré-fabricados em repositório Git de treinamento. Construtos E1.x + E2.x. Problem-Based Learning.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Git (branches, merge, rebase); Resolução de Conflitos de Versionamento; Code Review"
-    habilidades-nao-tecnicas="Comunicação Técnica; Negociação de Código; Trabalho em Par"
-    dimensao-sensorial="Medo de 'quebrar' o repositório compartilhado; Mensagens de erro Git percebidas como falha pessoal; Pressão de tempo na resolução"
-    momento-sprint="meio"
-    duracao="60 min"
-    qtd-min-participantes="2"
-    qtd-max-participantes="6"
-    modalidade="digital"
-    publico-alvo="Desenvolvedor; Tech Lead; Engenheiro de Software em Onboarding"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Git (branches, merge, rebase); Resolução de Conflitos de Versionamento; Code Review</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Comunicação Técnica; Negociação de Código; Trabalho em Par</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Medo de 'quebrar' o repositório compartilhado; Mensagens de erro Git percebidas como falha pessoal; Pressão de tempo na resolução</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
+    <descriptor name="duracao">60 min</descriptor>
+    <descriptor name="qtd-min-participantes">2</descriptor>
+    <descriptor name="qtd-max-participantes">6</descriptor>
+    <descriptor name="modalidade">digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; Tech Lead; Engenheiro de Software em Onboarding</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Conflito em Arquivo Binário">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Conflito em Arquivo Binário"
+                         context-id="ctx-sprint">
         <description>Conflito em arquivo binário — para perfis avançados</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Múltiplas Linguagens">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Múltiplas Linguagens"
+                         context-id="ctx-sprint">
         <description>Múltiplas linguagens — Python, JS, Java em conflito simultâneo</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Ambiente Offline">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Ambiente Offline"
+                         context-id="ctx-sprint">
         <description>Ambiente offline — repositório local bare sem acesso à internet</description>
       </artifact-variability-point>
     </artifact>

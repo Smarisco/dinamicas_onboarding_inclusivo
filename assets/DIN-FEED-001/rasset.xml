@@ -32,18 +32,21 @@
 
   <description>Prática de feedback estruturado com Modelo Pendleton (4 passos). Construtos E3.x + E2.x. Practice-Based Learning para comunicação construtiva, empática e eficaz.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="—"
-    habilidades-nao-tecnicas="Feedback Estruturado; Comunicação Não-Violenta; Escuta Empática"
-    dimensao-sensorial="Receber feedback inesperado sobre comportamento ou desempenho; Pressão de responder imediatamente sem tempo para processar"
-    momento-sprint="fim"
-    duracao="45 min"
-    qtd-min-participantes="4"
-    qtd-max-participantes="12"
-    modalidade="presencial ou digital"
-    publico-alvo="Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Líder Técnico"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Feedback Estruturado; Comunicação Não-Violenta; Escuta Empática</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Receber feedback inesperado sobre comportamento ou desempenho; Pressão de responder imediatamente sem tempo para processar</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao">45 min</descriptor>
+    <descriptor name="qtd-min-participantes">4</descriptor>
+    <descriptor name="qtd-max-participantes">12</descriptor>
+    <descriptor name="modalidade">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Líder Técnico</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Foco em Feedback Positivo">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Foco em Feedback Positivo"
+                         context-id="ctx-sprint">
         <description>Foco em feedback positivo — praticar apenas passo 1 nas primeiras sessões</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Cenários da Empresa">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Cenários da Empresa"
+                         context-id="ctx-sprint">
         <description>Cenários da empresa — substituir cenários genéricos por situações reais do contexto organizacional</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Online">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Online"
+                         context-id="ctx-sprint">
         <description>Online (Miro/Mentimeter) — cenários em cards digitais; feedback digitado antes de verbalizado</description>
       </artifact-variability-point>
     </artifact>

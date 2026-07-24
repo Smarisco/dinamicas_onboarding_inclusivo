@@ -32,18 +32,21 @@
 
   <description>Debate estruturado com inversão de papéis Dev/QA para construir empatia cognitiva técnica. Construtos E3.1 + E1.4. Exploration-Based Learning com bastão da fala.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="Análise de Riscos; Priorização de Backlog (MoSCoW)"
-    habilidades-nao-tecnicas="Empatia Cognitiva; Argumentação Lógica; Flexibilidade Cognitiva"
-    dimensao-sensorial="Debate acalorado pode escalar para conflito interpessoal real; Pressão de defender posição contrária à opinião pessoal; Múltiplas vozes simultâneas sem bastão da fala"
-    momento-sprint="fim"
-    duracao="45 min"
-    qtd-min-participantes="6"
-    qtd-max-participantes="20"
-    modalidade="presencial"
-    publico-alvo="Desenvolvedor; QA / Tester; Product Owner; Scrum Master"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Análise de Riscos; Priorização de Backlog (MoSCoW)</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Empatia Cognitiva; Argumentação Lógica; Flexibilidade Cognitiva</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Debate acalorado pode escalar para conflito interpessoal real; Pressão de defender posição contrária à opinião pessoal; Múltiplas vozes simultâneas sem bastão da fala</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao">45 min</descriptor>
+    <descriptor name="qtd-min-participantes">6</descriptor>
+    <descriptor name="qtd-max-participantes">20</descriptor>
+    <descriptor name="modalidade">presencial</descriptor>
+    <descriptor name="publico-alvo">Desenvolvedor; QA / Tester; Product Owner; Scrum Master</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Versão GDPR/LGPD">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Versão GDPR/LGPD"
+                         context-id="ctx-sprint">
         <description>Versão GDPR/LGPD — cenário de privacidade de dados vs. funcionalidade</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Dívida Técnica">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Versão Dívida Técnica"
+                         context-id="ctx-sprint">
         <description>Versão dívida técnica — Refatorar agora vs. feature nova primeiro</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Versão Silenciosa">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Versão Silenciosa"
+                         context-id="ctx-sensorial">
         <description>Versão silenciosa — todos os argumentos em post-its, sem fala oral</description>
       </artifact-variability-point>
     </artifact>

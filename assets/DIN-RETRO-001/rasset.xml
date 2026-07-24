@@ -32,18 +32,21 @@
 
   <description>Facilitação estruturada de retrospectiva ágil no modelo Derby &amp; Larsen (5 fases). Construtos E3.x + E2.x. Reflexão crítica coletiva e melhoria contínua.</description>
 
-  <classification
-    context=""
-    descriptor=""
-    habilidades-tecnicas="—"
-    habilidades-nao-tecnicas="Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback"
-    dimensao-sensorial="Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva"
-    momento-sprint="fim"
-    duracao="50 min"
-    qtd-min-participantes="3"
-    qtd-max-participantes="10"
-    modalidade="presencial ou digital"
-    publico-alvo="Scrum Master; Desenvolvedor; Product Owner; QA / Tester; Qualquer membro de time ágil"/>
+  <classification>
+    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
+    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
+    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
+
+    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
+    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Reflexão Crítica Coletiva; Melhoria Contínua; Abertura a Feedback</descriptor>
+    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de expor percepções negativas em grupo; Feedback inesperado sobre desempenho durante a retrospectiva</descriptor>
+    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
+    <descriptor name="duracao">50 min</descriptor>
+    <descriptor name="qtd-min-participantes">3</descriptor>
+    <descriptor name="qtd-max-participantes">10</descriptor>
+    <descriptor name="modalidade">presencial ou digital</descriptor>
+    <descriptor name="publico-alvo">Scrum Master; Desenvolvedor; Product Owner; QA / Tester; Qualquer membro de time ágil</descriptor>
+  </classification>
 
   <solution>
     <artifact
@@ -51,13 +54,17 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-variability-point id="vp-var1" name="VAR1 — Estrelas e Desejos">
+      <artifact-context context-id="ctx-sprint"/>
+      <artifact-variability-point id="vp-var1" name="VAR1 — Estrelas e Desejos"
+                         context-id="ctx-sprint">
         <description>Estrelas e Desejos — perguntas: 'O que brilhou?' e 'O que desejo para o próximo sprint?'</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Barco e Âncoras">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Barco e Âncoras"
+                         context-id="ctx-sprint">
         <description>Barco e Âncoras — metáfora visual: vento (impulso) vs. âncora (bloqueio)</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Online">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Online"
+                         context-id="ctx-sprint">
         <description>Online (Miro/Metroretro) — ferramentas digitais com post-its virtuais para times remotos</description>
       </artifact-variability-point>
     </artifact>
