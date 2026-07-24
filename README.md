@@ -224,7 +224,7 @@ docs(root): atualiza catalog.xml e SUMMARY.md
 ## Documentação
 
 A versão navegável deste repositório está publicada no GitBook:  
-*(link será adicionado após integração)*
+*(https://dinamicas-onboarding.gitbook.io/dinamicas_onboarding_inclusivo/)*
 
 ---
 
