@@ -32,21 +32,18 @@
 
   <description>Simulação de projeto modular com kits LEGO em que equipes constroem componentes separados que devem se integrar a uma estrutura-gabarito comum. Construtos E1.4 + E3.3.</description>
 
-  <classification>
-    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
-    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
-    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-
-    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Modularização; Integração de Componentes; Leitura de Requisitos</descriptor>
-    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Comunicação Descritiva; Negociação de Interfaces; Gestão de Frustração</descriptor>
-    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Barulho de blocos plásticos ao encaixar e desencaixar; Tensão de integração sob pressão de prazo; Discussões simultâneas entre equipes no espaço central</descriptor>
-    <descriptor name="momento-sprint" context-id="ctx-sprint">inicio</descriptor>
-    <descriptor name="duracao">35 min</descriptor>
-    <descriptor name="qtd-min-participantes">9</descriptor>
-    <descriptor name="qtd-max-participantes">12</descriptor>
-    <descriptor name="modalidade">presencial</descriptor>
-    <descriptor name="publico-alvo">Time de Desenvolvimento; Arquiteto de Software; Professor de Engenharia de Software; Facilitador Scrum</descriptor>
-  </classification>
+  <classification
+    context=""
+    descriptor=""
+    habilidades-tecnicas="Modularização; Integração de Componentes; Leitura de Requisitos"
+    habilidades-nao-tecnicas="Comunicação Descritiva; Negociação de Interfaces; Gestão de Frustração"
+    dimensao-sensorial="Barulho de blocos plásticos ao encaixar e desencaixar; Tensão de integração sob pressão de prazo; Discussões simultâneas entre equipes no espaço central"
+    momento-sprint="inicio"
+    duracao="35 min"
+    qtd-min-participantes="9"
+    qtd-max-participantes="12"
+    modalidade="presencial"
+    publico-alvo="Time de Desenvolvimento; Arquiteto de Software; Professor de Engenharia de Software; Facilitador Scrum"/>
 
   <solution>
     <artifact
@@ -54,17 +51,13 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-context context-id="ctx-sprint"/>
-      <artifact-variability-point id="vp-var1" name="VAR1 — LEGO Duplo"
-                         context-id="ctx-sensorial">
+      <artifact-variability-point id="vp-var1" name="VAR1 — LEGO Duplo">
         <description>LEGO Duplo — blocos maiores para acessibilidade motora</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Papel Quadriculado"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Papel Quadriculado">
         <description>Versão em papel quadriculado — sem peças físicas, acessível sem orçamento LEGO</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Times Distribuídos"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Times Distribuídos">
         <description>Times distribuídos — videoconferência com comunicação apenas por texto/chat</description>
       </artifact-variability-point>
     </artifact>

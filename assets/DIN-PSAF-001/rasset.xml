@@ -32,21 +32,18 @@
 
   <description>Autoavaliação coletiva com escala visual 1-5 para medir segurança psicológica. Construtos E2.x + E3.x. Fichas anônimas e discussão coletiva para identificar barreiras e construir acordos.</description>
 
-  <classification>
-    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
-    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
-    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-
-    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">—</descriptor>
-    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Segurança Psicológica; Vulnerabilidade Profissional; Autorregulação</descriptor>
-    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Pressão de revelar vulnerabilidade em grupo; Medo de ser identificado mesmo com anonimato declarado; Resultados muito baixos que geram tensão no grupo</descriptor>
-    <descriptor name="momento-sprint" context-id="ctx-sprint">fim</descriptor>
-    <descriptor name="duracao">40 min</descriptor>
-    <descriptor name="qtd-min-participantes">3</descriptor>
-    <descriptor name="qtd-max-participantes">10</descriptor>
-    <descriptor name="modalidade">presencial ou digital</descriptor>
-    <descriptor name="publico-alvo">Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Qualquer membro de time</descriptor>
-  </classification>
+  <classification
+    context=""
+    descriptor=""
+    habilidades-tecnicas="—"
+    habilidades-nao-tecnicas="Segurança Psicológica; Vulnerabilidade Profissional; Autorregulação"
+    dimensao-sensorial="Pressão de revelar vulnerabilidade em grupo; Medo de ser identificado mesmo com anonimato declarado; Resultados muito baixos que geram tensão no grupo"
+    momento-sprint="fim"
+    duracao="40 min"
+    qtd-min-participantes="3"
+    qtd-max-participantes="10"
+    modalidade="presencial ou digital"
+    publico-alvo="Desenvolvedor; Scrum Master; Product Owner; QA / Tester; Qualquer membro de time"/>
 
   <solution>
     <artifact
@@ -54,17 +51,13 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-context context-id="ctx-sprint"/>
-      <artifact-variability-point id="vp-var1" name="VAR1 — Termômetro de Humor"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var1" name="VAR1 — Termômetro de Humor">
         <description>Termômetro de humor — mede estado emocional atual; uso em check-ins diários</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Termômetro de Energia"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Termômetro de Energia">
         <description>Termômetro de energia — mede carga percebida; identifica esgotamento em sprints longos</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Multi-Dimensão"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Multi-Dimensão">
         <description>Multi-dimensão — 3 termômetros: segurança para errar / pedir ajuda / discordar</description>
       </artifact-variability-point>
     </artifact>

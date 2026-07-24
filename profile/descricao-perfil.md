@@ -49,21 +49,29 @@ It preserves full backward compatibility with any RAS 2.2-compliant toolchain wh
 
 ### Extension 1 — Mandatory Classification Section
 
-Every asset conforming to this profile **must** include a `<classification>` section (RAS Sec. 6.4.3) with at least the following three context elements:
+Every asset conforming to this profile **must** include a self-closing `<classification/>` element (RAS Sec. 6.4.3) with the following 11 direct attributes:
 
-| Context ID | Name | Required Descriptor Names |
-|------------|------|--------------------------|
-| `ctx-habilidades` | Eixo de Habilidades | `habilidades-tecnicas`, `habilidades-nao-tecnicas` |
-| `ctx-sensorial` | Eixo de Perfil Sensorial | `dimensao-sensorial` |
-| `ctx-sprint` | Eixo de Contexto Ágil | `momento-sprint` |
+| Attribute | Type | Notes |
+|-----------|------|-------|
+| `context` | xs:string | Inherited from Core RAS Classification metaclass; left empty |
+| `descriptor` | xs:string | Inherited from Core RAS Classification metaclass; left empty |
+| `habilidades-tecnicas` | xs:string | Eixo de Habilidades — technical skills developed |
+| `habilidades-nao-tecnicas` | xs:string | Eixo de Habilidades — non-technical skills developed |
+| `dimensao-sensorial` | xs:string | Eixo de Perfil Sensorial — sensory dimensions addressed |
+| `momento-sprint` | SprintMoment | Eixo de Contexto Ágil — `inicio`, `meio`, or `fim` |
+| `duracao` | xs:string | Activity duration |
+| `qtd-min-participantes` | xs:string | Minimum number of participants |
+| `qtd-max-participantes` | xs:string | Maximum number of participants |
+| `modalidade` | xs:string | Delivery mode (presencial / digital) |
+| `publico-alvo` | xs:string | Target audience |
 
-The `momento-sprint` descriptor accepts exactly three values: `inicio`, `meio`, or `fim`.
+The `momento-sprint` attribute accepts exactly three values: `inicio`, `meio`, or `fim`.
 
-### Extension 2 — Three Mandatory Classification Contexts
+### Extension 2 — Eleven Mandatory Classification Attributes
 
-The three contexts `ctx-habilidades`, `ctx-sensorial`, and `ctx-sprint` are **mandatory** in every conforming asset. A validator implementing this profile must reject any `rasset.xml` that lacks any one of these three context declarations.
+All 11 attributes of `<classification/>` are **mandatory** (`use="required"` in the XSD schema) in every conforming asset. A validator implementing this profile must reject any `rasset.xml` whose `<classification/>` is missing any attribute.
 
-Rationale: these axes are the primary navigation dimensions used in `catalog.xml`, `SUMMARY.md`, and the GitBook interface. Without them an asset cannot be properly filtered or sequenced in an onboarding journey.
+Rationale: the nine domain attributes encode the three navigation axes used in `catalog.xml`, `SUMMARY.md`, and the GitBook interface. Without them an asset cannot be properly filtered or sequenced in an onboarding journey.
 
 ### Extension 3 — Two Mandatory Solution Artifacts
 

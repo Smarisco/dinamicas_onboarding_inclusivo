@@ -32,21 +32,18 @@
 
   <description>Simulação de navegação verbal em campo com objetos — participante vendado guiado por parceiro. Construtos E3.1 + E2.5. Comunicação precisa, escuta ativa e confiança em pares Sênior/Júnior.</description>
 
-  <classification>
-    <context id="ctx-habilidades"  name="Eixo de Habilidades"/>
-    <context id="ctx-sensorial"    name="Eixo de Perfil Sensorial"/>
-    <context id="ctx-sprint"       name="Eixo de Contexto Ágil"/>
-
-    <descriptor name="habilidades-tecnicas" context-id="ctx-habilidades">Algoritmos (passo a passo); Debugging em tempo real</descriptor>
-    <descriptor name="habilidades-nao-tecnicas" context-id="ctx-habilidades">Escuta Ativa; Clareza na Comunicação; Empatia</descriptor>
-    <descriptor name="dimensao-sensorial" context-id="ctx-sensorial">Venda ou objeto cobrindo os olhos (sensação de restrição); Ruído de múltiplas duplas guiando simultaneamente; Pressão de tempo durante a travessia</descriptor>
-    <descriptor name="momento-sprint" context-id="ctx-sprint">meio</descriptor>
-    <descriptor name="duracao">40 min</descriptor>
-    <descriptor name="qtd-min-participantes">8</descriptor>
-    <descriptor name="qtd-max-participantes">12</descriptor>
-    <descriptor name="modalidade">presencial</descriptor>
-    <descriptor name="publico-alvo">Desenvolvedor Júnior; Desenvolvedor Sênior; Tech Lead; Facilitador de Pair Programming</descriptor>
-  </classification>
+  <classification
+    context=""
+    descriptor=""
+    habilidades-tecnicas="Algoritmos (passo a passo); Debugging em tempo real"
+    habilidades-nao-tecnicas="Escuta Ativa; Clareza na Comunicação; Empatia"
+    dimensao-sensorial="Venda ou objeto cobrindo os olhos (sensação de restrição); Ruído de múltiplas duplas guiando simultaneamente; Pressão de tempo durante a travessia"
+    momento-sprint="meio"
+    duracao="40 min"
+    qtd-min-participantes="8"
+    qtd-max-participantes="12"
+    modalidade="presencial"
+    publico-alvo="Desenvolvedor Júnior; Desenvolvedor Sênior; Tech Lead; Facilitador de Pair Programming"/>
 
   <solution>
     <artifact
@@ -54,21 +51,16 @@
       artifact-name="Cartão do Facilitador"
       artifact-type="cartao-facilitador"
       artifact-reference="solution/cartao-facilitador.md">
-      <artifact-context context-id="ctx-sprint"/>
-      <artifact-variability-point id="vp-var1" name="VAR1 — Sem Venda (Escrita Prévia)"
-                         context-id="ctx-sensorial">
+      <artifact-variability-point id="vp-var1" name="VAR1 — Sem Venda (Escrita Prévia)">
         <description>Sem venda (escrita prévia) — Programador escreve lista; Sistema executa lendo</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var2" name="VAR2 — Remota via Chat"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var2" name="VAR2 — Remota via Chat">
         <description>Remota via chat — instruções por Slack com delay de 5s entre mensagens</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var3" name="VAR3 — Múltiplos Sistemas"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var3" name="VAR3 — Múltiplos Sistemas">
         <description>Múltiplos Sistemas — 1 Programador guia 2-3 Sistemas simultâneos</description>
       </artifact-variability-point>
-      <artifact-variability-point id="vp-var4" name="VAR4 — Campo Codificado"
-                         context-id="ctx-sprint">
+      <artifact-variability-point id="vp-var4" name="VAR4 — Campo Codificado">
         <description>Campo codificado — comandos em pseudocódigo para perfis técnicos avançados</description>
       </artifact-variability-point>
     </artifact>

@@ -27,32 +27,27 @@
   ========================================================= -->
 
   <!-- =========================================================
-       SECTION 2 — Mandatory Classification Context IDs
-       RAS-TEA requires every asset to carry exactly the three
-       contexts defined below.
+       SECTION 2 — Classification Structure
+       Every RAS-TEA asset must include a self-closing
+       <classification> element with the 11 attributes below
+       (RAS-TEA Profile, Art. 4). The attributes context and
+       descriptor are inherited from the Core RAS Classification
+       metaclass and left empty pending editorial definition.
   ========================================================= -->
 
-  <xs:simpleType name="MandatoryContextId">
-    <xs:annotation>
-      <xs:documentation>
-        Enumeration of the three mandatory classification context
-        identifiers required by the RAS-TEA profile.
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <!-- Eixo de Habilidades: maps habilidades-tecnicas / habilidades-nao-tecnicas descriptors -->
-      <xs:enumeration value="ctx-habilidades"/>
-      <!-- Eixo de Perfil Sensorial: maps sensoryTriggers from OAP-1.0 -->
-      <xs:enumeration value="ctx-sensorial"/>
-      <!-- Eixo de Contexto Ágil: maps sprint_moment (inicio / meio / fim) -->
-      <xs:enumeration value="ctx-sprint"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <!-- Alias for the set of all recognised context ids -->
-  <xs:simpleType name="ContextId">
-    <xs:union memberTypes="ras:MandatoryContextId"/>
-  </xs:simpleType>
+  <xs:complexType name="ClassificationType">
+    <xs:attribute name="context"                  type="xs:string" use="required"/>
+    <xs:attribute name="descriptor"               type="xs:string" use="required"/>
+    <xs:attribute name="habilidades-tecnicas"     type="xs:string" use="required"/>
+    <xs:attribute name="habilidades-nao-tecnicas" type="xs:string" use="required"/>
+    <xs:attribute name="dimensao-sensorial"       type="xs:string" use="required"/>
+    <xs:attribute name="momento-sprint"           type="ras:SprintMoment" use="required"/>
+    <xs:attribute name="duracao"                  type="xs:string" use="required"/>
+    <xs:attribute name="qtd-min-participantes"    type="xs:string" use="required"/>
+    <xs:attribute name="qtd-max-participantes"    type="xs:string" use="required"/>
+    <xs:attribute name="modalidade"               type="xs:string" use="required"/>
+    <xs:attribute name="publico-alvo"             type="xs:string" use="required"/>
+  </xs:complexType>
 
   <!-- =========================================================
        SECTION 3 — Mandatory Solution Artifact Types
